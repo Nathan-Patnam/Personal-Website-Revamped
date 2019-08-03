@@ -3,24 +3,21 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | nav-bar', function(hooks) {
+module('Integration | Component | nav-bar',  function (hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
+  hooks.beforeEach(async function () {
     await render(hbs`<NavBar />`);
-
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <NavBar>
-        template block text
-      </NavBar>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
+
+  test('it renders', async function (assert) {
+    assert.dom('[data-test-nav-bar]').exists();
+  });
+
+
+  test('proper text rendered ', async function (assert) {
+    assert.dom('[data-test-nav-bar] div').exists({ count: 5 });
+    assert.dom('[data-test-nav-bar]').includesText("About Me Experience Logo Placeholder Services Projects");
+  });
+
 });
