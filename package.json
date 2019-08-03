@@ -15,7 +15,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "yarn cross-env COVERAGE=true ember test"
   },
   "devDependencies": {
     "@ember/jquery": "^0.6.0",
@@ -25,6 +25,7 @@
     "ember-cli": "~3.10.1",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^7.7.3",
+    "ember-cli-code-coverage": "^0.4.2",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-eslint": "^5.1.0",
     "ember-cli-htmlbars": "^3.0.1",
@@ -47,5 +48,8 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0"
   }
 }
