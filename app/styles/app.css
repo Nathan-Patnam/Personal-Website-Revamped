@@ -1,0 +1,9 @@
+.nav-bar-heading {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-bar-heading:hover {
+  color: #ffd450;
+  cursor: pointer;
+}
