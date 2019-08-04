@@ -15,8 +15,7 @@ module("Integration | Component | nav-bar", function(hooks) {
   });
 
   test("proper text rendered ", async function(assert) {
-    const navbarHeadings =
-      "ABOUT ME EXPERIENCE Logo Placeholder SERVICES PROJECTS";
+    const navbarHeadings = "ABOUT ME EXPERIENCE SERVICES PROJECTS";
     assert.dom("[data-test-nav-bar] div").exists({ count: 5 });
     assert.dom("[data-test-nav-bar]").includesText(navbarHeadings);
   });
