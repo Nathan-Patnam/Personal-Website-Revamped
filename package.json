@@ -47,7 +47,7 @@
     "qunit-dom": "^0.8.4"
   },
   "engines": {
-    "node": "8.* || >= 10.*"
+    "node": "6.* || 8.* || >= 10.*"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
