@@ -722,7 +722,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@ember/jquery@^0.6.0":
+"@ember/jquery@0.6.1":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@ember/jquery/-/jquery-0.6.1.tgz#eef89ebc8d7b49bddc176f2a646746c8f5d93978"
   integrity sha512-XMgfUYag97YOYLsC0Ys4/H6mHO2U2wra/92eVIug+5eYBloYSDhv2MY/iq/ocwXVSB2dQaphJx5pFXqdrjEzWQ==
