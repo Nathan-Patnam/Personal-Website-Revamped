@@ -3,13 +3,21 @@
   font-family: "Nunito Sans", sans-serif;
   height: 80px;
 }
-
-.nav-bar-heading {
+.nav-bar .heading {
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
   font-weight: 700;
   letter-spacing: 1px;
+  color: white;
+
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.nav-bar-heading:hover {
+.nav-bar .heading:hover {
   color: #ffd450;
   cursor: pointer;
 }
