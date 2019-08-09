@@ -17,5 +17,8 @@ module("Acceptance | visit pages", function(hooks) {
 
     await click("[data-test-services-heading] span");
     assert.equal(currentURL(), "/services");
+
+    await click("[data-test-projects-heading] span");
+    assert.equal(currentURL(), "/projects");
   });
 });
