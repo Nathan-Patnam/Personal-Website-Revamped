@@ -1,6 +1,8 @@
 <div local-class="nav-bar-container">
     <div local-class="nav-bar" data-test-nav-bar>
-        <div local-class="heading">ABOUT ME</div>
+        <div local-class="heading" data-test-about-me-heading>
+            {{#link-to "about-me" tagName="span"}}ABOUT ME{{/link-to}}
+        </div>
         <div local-class="heading" data-test-experience-heading>
             {{#link-to "experience" tagName="span"}}EXPERIENCE{{/link-to}}
         </div>
