@@ -5,17 +5,17 @@ import { setupApplicationTest } from "ember-qunit";
 module("Acceptance | visit pages", function(hooks) {
   setupApplicationTest(hooks);
 
-  test("visiting about me page", async function(assert) {
+  test("visiting every page", async function(assert) {
     await visit("/");
-    assert.dom("[data-test-about-me-heading]").exists();
-    await click("[data-test-about-me-heading] span");
-    assert.equal(currentURL(), "/about-me");
-  });
+    assert.equal(currentURL(), "/");
 
-  test("visting experience page", async function(assert) {
-    await visit("/");
-    assert.dom("[data-test-experience-heading]").exists();
     await click("[data-test-experience-heading] span");
     assert.equal(currentURL(), "/experience");
+
+    await click("[data-test-about-me-heading] span");
+    assert.equal(currentURL(), "/about-me");
+
+    await click("[data-test-services-heading] span");
+    assert.equal(currentURL(), "/services");
   });
 });

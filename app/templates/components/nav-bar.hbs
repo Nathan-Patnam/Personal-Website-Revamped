@@ -9,7 +9,9 @@
         <div local-class="heading">
             <img src="./img/logo.png" alt="Italian Trulli" local-class="logo-heading">
         </div>
-        <div local-class="heading">{{#link-to "services" tagName="span"}}SERVICES{{/link-to}}</div>
+        <div local-class="heading" data-test-services-heading>
+            {{#link-to "services" tagName="span"}}SERVICES{{/link-to}}
+        </div>
         <div local-class="heading">PROJECTS</div>
     </div>
 </div>
