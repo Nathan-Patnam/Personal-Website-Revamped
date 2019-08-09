@@ -9,21 +9,24 @@
 
   display: flex;
 }
-.nav-bar .heading {
+.nav-bar .heading-container {
   -ms-flex: 1;
   flex: 1;
   -ms-flex-align: center;
   align-items: center;
   display: flex;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: white;
-  font-size: 17px;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.nav-bar .heading:hover {
+.heading-container span {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 17px;
+}
+
+.heading-container span:hover {
   color: #ffd450;
   cursor: pointer;
 }
