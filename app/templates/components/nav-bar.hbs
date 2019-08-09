@@ -1,11 +1,21 @@
 <div local-class="nav-bar-container">
     <div local-class="nav-bar" data-test-nav-bar>
-        <div local-class="heading">ABOUT ME</div>
-        <div local-class="heading">EXPERIENCE</div>
-        <div local-class="heading">
-            <img src="./img/logo.png" alt="Italian Trulli" local-class="logo-heading">
+        <div local-class="heading-container" data-test-about-me-heading>
+            {{#link-to "about-me" tagName="span"}}ABOUT ME{{/link-to}}
         </div>
-        <div local-class="heading">SERVICES</div>
-        <div local-class="heading">PROJECTS</div>
+        <div local-class="heading-container" data-test-experience-heading>
+            {{#link-to "experience" tagName="span"}}EXPERIENCE{{/link-to}}
+        </div>
+        <div local-class="heading-container">
+            <img src="./img/logo.png"
+                alt="Nathan Patnam's Personal Logo. There is a golld N and P inside of a golden ring with a crown on top"
+                local-class="logo-heading">
+        </div>
+        <div local-class="heading-container" data-test-services-heading>
+            {{#link-to "services" tagName="span"}}SERVICES{{/link-to}}
+        </div>
+        <div local-class="heading-container" data-test-projects-heading>
+            {{#link-to "projects" tagName="span"}}PROJECTS{{/link-to}}
+        </div>
     </div>
 </div>
