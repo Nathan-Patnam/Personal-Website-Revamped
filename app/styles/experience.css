@@ -10,12 +10,17 @@
 .education-experience .education-container {
   flex: 2;
 }
+.experience-card {
+  margin: 15px 0;
+}
 
 .date-company-title {
   display: flex;
+  font-weight: 700;
+  font-size: 20px;
 }
 .date-company-title .date {
-  flex: 1;
+  flex: 2;
 }
 
 .date-company-title .company-title {
@@ -26,11 +31,18 @@
 }
 
 .logo {
-  flex: 1;
+  flex: 2;
 }
 .logo-image {
+  position: relative;
+  float: left;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .description {
   flex: 8;
+  padding: 5px 20px;
+  font-size: 14px;
 }
