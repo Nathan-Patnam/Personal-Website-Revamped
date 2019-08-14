@@ -1,0 +1,11 @@
+.education-experience {
+  display: flex;
+}
+
+.education-experience .experience-container {
+  flex: 3;
+}
+
+.education-experience .education-container {
+  flex: 2;
+}
