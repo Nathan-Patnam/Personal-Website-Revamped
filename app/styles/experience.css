@@ -1,5 +1,6 @@
 .education-experience {
   display: flex;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .education-experience .experience-container {
@@ -8,4 +9,29 @@
 
 .education-experience .education-container {
   flex: 2;
+}
+
+.date-company-title {
+  display: flex;
+}
+.date-company-title .date {
+  flex: 1;
+}
+
+.date-company-title .company-title {
+  flex: 8;
+}
+.logo-description {
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+.logo-image {
+  max-width: 100%;
+}
+
+.description {
+  flex: 8;
 }
