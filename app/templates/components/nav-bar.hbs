@@ -1,21 +1,23 @@
-<div local-class="nav-bar-container">
-    <div local-class="nav-bar" data-test-nav-bar>
-        <div local-class="heading-container" data-test-about-me-heading>
-            {{#link-to "about-me" tagName="span"}}ABOUT ME{{/link-to}}
-        </div>
-        <div local-class="heading-container" data-test-experience-heading>
-            {{#link-to "experience" tagName="span"}}EXPERIENCE{{/link-to}}
-        </div>
-        <div local-class="heading-container">
-            <img src="./img/logo.png"
-                alt="Nathan Patnam's Personal Logo. There is a golld N and P inside of a golden ring with a crown on top"
-                local-class="logo-heading">
-        </div>
-        <div local-class="heading-container" data-test-services-heading>
-            {{#link-to "services" tagName="span"}}SERVICES{{/link-to}}
-        </div>
-        <div local-class="heading-container" data-test-projects-heading>
-            {{#link-to "projects" tagName="span"}}PROJECTS{{/link-to}}
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark" local-class="navigation" data-test-nav-bar>
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" data-test-headings>
+        <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item" data-test-about-me-heading>
+                {{#link-to "about-me" class="nav-link" local-class="nav-link"}}ABOUT ME{{/link-to}}
+            </li>
+            <li class="nav-item" data-test-experience-heading>
+                {{#link-to "experience" class="nav-link" local-class="nav-link"}}EXPERIENCE{{/link-to}}
+            </li>
+            <li class="nav-item" data-test-services-heading>
+                {{#link-to "services" class="nav-link" local-class="nav-link"}}SERVICES{{/link-to}}
+            </li>
+            <li class="nav-item" data-test-projects-heading>
+                {{#link-to "projects" class="nav-link" local-class="nav-link"}}PROJECTS{{/link-to}}
+            </li>
+        </ul>
     </div>
-</div>
+</nav>
