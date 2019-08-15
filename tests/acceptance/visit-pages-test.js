@@ -9,16 +9,16 @@ module("Acceptance | visit pages", function(hooks) {
     await visit("/");
     assert.equal(currentURL(), "/");
 
-    await click("[data-test-experience-heading] span");
+    await click("[data-test-experience-heading] a");
     assert.equal(currentURL(), "/experience");
 
-    await click("[data-test-about-me-heading] span");
+    await click("[data-test-about-me-heading] a");
     assert.equal(currentURL(), "/about-me");
 
-    await click("[data-test-services-heading] span");
+    await click("[data-test-services-heading] a");
     assert.equal(currentURL(), "/services");
 
-    await click("[data-test-projects-heading] span");
+    await click("[data-test-projects-heading] a");
     assert.equal(currentURL(), "/projects");
   });
 });

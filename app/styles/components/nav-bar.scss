@@ -1,0 +1,19 @@
+.navigation {
+  background-color: #22362a;
+  color: white;
+  .nav-link li a {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+
+    &:hover {
+      color: #ffd450 !important;
+    }
+  }
+}
+
+//current route heading is highlighted and needs to use boostrap active value
+:global(.nav-link.active) {
+  color: #ffd450 !important;
+}
