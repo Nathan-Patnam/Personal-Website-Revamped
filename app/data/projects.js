@@ -1,6 +1,7 @@
 export default {
     data: [
         {
+            type: 'WEBAPP',
             imagePath: './img/projects/facebook-clone.png',
             imageAltDescription: 'Profile page that resembles Facebook UI',
             title: 'Facebook clone',
@@ -10,7 +11,23 @@ export default {
             githubLink: 'https://github.com/Nathan-Patnam/facebook-clone',
             dataCreated: 'March 2018'
         },
+
         {
+            type: 'ARTICLE',
+            imagePath: './img/projects/unit-testing.png',
+            imageAltDescription: 'Terminal Screenshot of failing unit test',
+            title: 'Unit Testing in Python',
+            description:
+                'What is Unit Testing & Code Coverage and How to Use Them in Python',
+            tags: ['Python', 'Pytest'],
+            githubLink: null,
+            liveWebsiteLink:
+                'https://medium.com/@nathanpatnam/what-is-unit-testing-code-coverage-and-how-to-implement-and-use-them-in-python-a8f029558fe7',
+            dataCreated: 'Feb 2018'
+        },
+
+        {
+            type: 'APP',
             imagePath: './img/projects/java-argument-parser.png',
             imageAltDescription:
                 'Final Presentation for Capstone Class where I created this Java package',
