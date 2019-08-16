@@ -1,9 +1,10 @@
-"use strict";
+'use strict';
 
 module.exports = {
-  extends: "recommended",
-  rules: {
-    "no-inline-styles": false,
-    "block-indentation": 4
-  }
+    extends: 'recommended',
+    rules: {
+        'no-inline-styles': false,
+        'self-closing-void-elements': false,
+        'block-indentation': 4
+    }
 };
