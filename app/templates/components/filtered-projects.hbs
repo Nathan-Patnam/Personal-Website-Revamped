@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             {{#each filteredProjects as |project|}}
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card mb-4 box-shadow" data-test-project>
                         <img
                             class="card-img-top"
@@ -20,6 +20,19 @@
                             <p class="card-text">
                                 {{project.description}}
                             </p>
+                            <div>
+                                <p class="card-text">
+                                    Made With
+                                </p>
+                                {{#each project.tags as |tag|}}
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-info"
+                                    >
+                                        {{tag}}
+                                    </button>
+                                {{/each}}
+                            </div>
                             <div
                                 class="d-flex justify-content-between align-items-center"
                             >
