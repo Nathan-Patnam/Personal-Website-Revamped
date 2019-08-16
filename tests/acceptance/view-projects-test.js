@@ -15,6 +15,6 @@ module('Acceptance | view projects', function(hooks) {
         assert.dom('[data-test-filtered-projects]').exists();
         assert
             .dom('[data-test-filtered-projects] [data-test-project]')
-            .exists({ count: 3 });
+            .exists({ count: 7 });
     });
 });
