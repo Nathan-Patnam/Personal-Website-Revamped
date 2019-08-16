@@ -10,6 +10,9 @@ export default {
             dataCreated: 'March 2018'
         },
         {
+            imagePath: './img/projects/java-argument-parser.png',
+            imageAltDescription:
+                'Final Presentation for Capstone Class where I created this Java package',
             title: 'Java Argument Parser',
             description:
                 'Java package that parses arguments from the command line. Created during Wofford’s Computer Science Capstone Class with three other people.Used Java, Jenkins, Gradle, JUnit, Robot Framework, and Coveralls.',
