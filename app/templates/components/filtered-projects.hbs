@@ -91,15 +91,17 @@
                                             View
                                         </a>
                                     {{/if}}
-                                    <a
-                                        class="btn btn-sm btn-outline-secondary"
-                                        target="_blank"
-                                        href={{project.githubLink}}
-                                        rel="noopener"
-                                        role="button"
-                                    >
-                                        Code
-                                    </a>
+                                    {{#if project.githubLink}}
+                                        <a
+                                            class="btn btn-sm btn-outline-secondary"
+                                            target="_blank"
+                                            href={{project.githubLink}}
+                                            rel="noopener"
+                                            role="button"
+                                        >
+                                            Code
+                                        </a>
+                                    {{/if}}
                                 </div>
                                 <small class="text-muted">
                                     {{project.dataCreated}}

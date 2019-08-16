@@ -4,6 +4,26 @@ export default {
             type: 'WEBAPP',
             imagePath: './img/projects/facebook-clone.png',
             imageAltDescription: 'Profile page that resembles Facebook UI',
+            title: 'GitHub-Issue Triage Tool',
+            description:
+                'Web Services I built during my internship at Heroku where I built a tool with Paras Adhikary to automate the long & tedious process of adding issues created in GitHub to Salesforce"s Grand Unified Ticketing System (GUS)',
+            tags: [
+                'Ember.js',
+                'Handelbars',
+                'GraphQL',
+                'Purple3',
+                'Heroku',
+                'Mirage',
+                'QUnit'
+            ],
+            viewLink: 'https://hardcore-leavitt-747d51.netlify.com/',
+            githubLink: null,
+            dataCreated: 'Summer 2019'
+        },
+        {
+            type: 'WEBAPP',
+            imagePath: './img/projects/facebook-clone.png',
+            imageAltDescription: 'Profile page that resembles Facebook UI',
             title: 'Facebook clone',
             description: 'Created Facebook UI Skeleton',
             tags: ['HTML', 'CSS'],
