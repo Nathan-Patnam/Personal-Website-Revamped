@@ -1,0 +1,58 @@
+<div class="album py-5 bg-light" data-test-filtered-projects>
+    <div class="container">
+        <div class="row">
+            {{#each filteredProjects as |project|}}
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow" data-test-project>
+                        <img
+                            class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
+                            alt={{project.imageAltDescription}}
+                            style="height: 225px; width: 100%; display: block;"
+                            src={{project.imagePath}}
+                            data-holder-rendered="true"
+                         />
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                {{project.title}}
+                            </h5>
+                            <p class="card-text">
+                                {{project.description}}
+                            </p>
+                            <div
+                                class="d-flex justify-content-between align-items-center"
+                            >
+                                <div class="btn-group">
+                                    {{#if project.viewLink}}
+                                        <a
+                                            class="btn btn-sm btn-outline-secondary"
+                                            href={{project.viewLink}}
+                                            rel="noopener"
+                                            target="_blank"
+                                            role="button"
+                                        >
+                                            View
+                                        </a>
+                                    {{/if}}
+                                    <a
+                                        class="btn btn-sm btn-outline-secondary"
+                                        target="_blank"
+                                        href={{project.githubLink}}
+                                        rel="noopener"
+                                        role="button"
+                                    >
+                                        Code
+                                    </a>
+                                </div>
+                                <small class="text-muted">
+                                    {{project.dataCreated}}
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
