@@ -1,6 +1,8 @@
 export default {
     data: [
         {
+            imagePath: './img/projects/facebook-clone.png',
+            imageAltDescription: 'Profile page that resembles Facebook UI',
             title: 'Facebook clone',
             description: 'Created Facebook UI Skeleton using HTML and CSS',
             viewLink: 'https://hardcore-leavitt-747d51.netlify.com/',
