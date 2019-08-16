@@ -1,5 +1,48 @@
 <div class="album py-5 bg-light" data-test-filtered-projects>
     <div class="container">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input
+                    type="radio"
+                    name="options"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                 />
+
+                All
+            </label>
+            <label class="btn btn-secondary">
+                <input
+                    type="radio"
+                    name="options"
+                    id="option2"
+                    autocomplete="off"
+                 />
+
+                Web Applications
+            </label>
+            <label class="btn btn-secondary">
+                <input
+                    type="radio"
+                    name="options"
+                    id="option3"
+                    autocomplete="off"
+                 />
+
+                Youtube Videos
+            </label>
+            <label class="btn btn-secondary">
+                <input
+                    type="radio"
+                    name="options"
+                    id="option3"
+                    autocomplete="off"
+                 />
+
+                Medium Articles
+            </label>
+        </div>
         <div class="row">
             {{#each filteredProjects as |project|}}
                 <div class="col-md-6 col-lg-4">
