@@ -1,8 +1,38 @@
 <div class="album py-5 bg-light" data-test-filtered-projects>
     <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button
+                type="button"
+                class="btn btn-secondary"
+                {{action (mut projectsFilterKey) 'ALL'}}
+            >
+                All
+            </button>
+            <button
+                type="button"
+                class="btn btn-secondary"
+                {{action (mut projectsFilterKey) 'APP'}}
+            >
+                Web Applications
+            </button>
+            <button
+                type="button"
+                class="btn btn-secondary"
+                {{action (mut projectsFilterKey) 'VIDEO'}}
+            >
+                Videos
+            </button>
+            <button
+                type="button"
+                class="btn btn-secondary"
+                {{action (mut projectsFilterKey) 'ARTICLE'}}
+            >
+                Articles
+            </button>
+        </div>
         <div class="row">
             {{#each filteredProjects as |project|}}
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card mb-4 box-shadow" data-test-project>
                         <img
                             class="card-img-top"
@@ -20,6 +50,19 @@
                             <p class="card-text">
                                 {{project.description}}
                             </p>
+                            <div>
+                                <p class="card-text">
+                                    Made With
+                                </p>
+                                {{#each project.tags as |tag|}}
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-info"
+                                    >
+                                        {{tag}}
+                                    </button>
+                                {{/each}}
+                            </div>
                             <div
                                 class="d-flex justify-content-between align-items-center"
                             >
@@ -35,15 +78,17 @@
                                             View
                                         </a>
                                     {{/if}}
-                                    <a
-                                        class="btn btn-sm btn-outline-secondary"
-                                        target="_blank"
-                                        href={{project.githubLink}}
-                                        rel="noopener"
-                                        role="button"
-                                    >
-                                        Code
-                                    </a>
+                                    {{#if project.githubLink}}
+                                        <a
+                                            class="btn btn-sm btn-outline-secondary"
+                                            target="_blank"
+                                            href={{project.githubLink}}
+                                            rel="noopener"
+                                            role="button"
+                                        >
+                                            Code
+                                        </a>
+                                    {{/if}}
                                 </div>
                                 <small class="text-muted">
                                     {{project.dataCreated}}

@@ -1,22 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-dark" local-class="navigation" data-test-nav-bar>
-    {{#link-to "index" class="navbar-brand" }}Logo{{/link-to}}
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav
+    class="navbar navbar-expand-lg navbar-dark"
+    local-class="navigation"
+    data-test-nav-bar
+>
+    {{#link-to 'index' class='navbar-brand'}}
+        Logo
+    {{/link-to}}
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav" data-test-headings>
         <ul class="navbar-nav nav-fill w-100" local-class="nav-link">
             <li class="nav-item" data-test-about-me-heading>
-                {{#link-to "about-me" class="nav-link" }}ABOUT ME{{/link-to}}
+                {{#link-to 'about-me' class='nav-link'}}
+                    ABOUT ME
+                {{/link-to}}
             </li>
             <li class="nav-item" data-test-experience-heading>
-                {{#link-to "experience" class="nav-link" }}EXPERIENCE{{/link-to}}
+                {{#link-to 'experience' class='nav-link'}}
+                    EXPERIENCE
+                {{/link-to}}
             </li>
             <li class="nav-item" data-test-services-heading>
-                {{#link-to "services"  class="nav-link" }}SERVICES{{/link-to}}
+                {{#link-to 'services' class='nav-link'}}
+                    SERVICES
+                {{/link-to}}
             </li>
             <li class="nav-item" data-test-projects-heading>
-                {{#link-to "projects" class="nav-link" }}PROJECTS{{/link-to}}
+                {{#link-to 'projects' class='nav-link'}}
+                    PROJECTS
+                {{/link-to}}
             </li>
         </ul>
     </div>
