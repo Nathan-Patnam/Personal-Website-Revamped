@@ -6,6 +6,6 @@ module.exports = {
         'no-inline-styles': false,
         'self-closing-void-elements': false,
         quotes: false,
-        'block-indentation': 4
+        'block-indentation': false
     }
 };
