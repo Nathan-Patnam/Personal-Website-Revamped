@@ -1,46 +1,50 @@
-{{#each foo as |review|}}
-  <div class="card">
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-2">
-          <img
-            src="https://image.ibb.co/jw55Ex/def_face.jpg"
-            class="img img-rounded img-fluid"
-            alt="animated person"
-           />
+<div class="col-lg-6 col-md-12">
+  {{#each foo as |review|}}
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">
+            <img
+              src="https://image.ibb.co/jw55Ex/def_face.jpg"
+              class="img img-rounded img-fluid"
+              alt="animated person"
+             />
 
-          <p class="text-secondary text-center">
-            {{review.date}}
-          </p>
-        </div>
-        <div class="col-md-10">
-          <p>
-            <a
-              class="float-left"
-              href="https://maniruzzaman-akash.blogspot.com/p/contact.html"
-            >
-              <strong>
-                {{review.name}}
-              </strong>
-            </a>
-          </p>
-          <p>
-            <strong>
-              {{review.title}}
-            </strong>
-          </p>
-          <div class="clearfix"></div>
-          <p>
-            {{review.review}}
-          </p>
-          <p>
-            <a class="float-right btn btn-outline-primary ml-2">
-              <i class="fa fa-reply"></i>
-              View
-            </a>
-          </p>
+            <p class="text-secondary text-center">
+              Tutored for
+              {{review.numberTutoringSession}}
+              sesions
+            </p>
+          </div>
+          <div class="col-md-10">
+            <p>
+              <a
+                class="float-left"
+                href="https://maniruzzaman-akash.blogspot.com/p/contact.html"
+              >
+                <strong>
+                  {{review.name}}
+                </strong>
+              </a>
+              <p>
+                <strong>
+                  {{review.tagLine}}
+                </strong>
+              </p>
+            </p>
+            <div class="clearfix"></div>
+            <p>
+              {{review.review}}
+            </p>
+            <p>
+              <a class="float-right btn btn-outline-primary ml-2">
+                <i class="fa fa-reply"></i>
+                View
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-{{/each}}
+  {{/each}}
+</div>
