@@ -1,47 +1,25 @@
-<div class="col-lg-12">
+<h1 class="display-3">
+    Testmonials
+</h1>
+<div class="row">
     {{#each pagedContent as |review|}}
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img
-                            src=""
-                            class="img img-rounded img-fluid"
-                            alt="animated person"
-                         />
-
-                        <p class="text-secondary text-center">
-                            Tutored for
-                            {{review.numberTutoringSession}}
-                            sesions
-                        </p>
-                    </div>
-                    <div class="col-md-10">
-                        <h4>
-                            <strong>
-                                {{review.name}}
-                            </strong>
-                        </h4>
-                        <p>
-                            <strong>
-                                {{review.tagLine}}
-                            </strong>
-                        </p>
-                        <div class="clearfix"></div>
-                        <p>
-                            {{review.review}}
-                        </p>
-                        <p>
-                            <a
-                                class="float-right btn btn-outline-primary ml-2"
-                                href={{review.viewLink}}
-                                rel="noopener"
-                                target="_blank"
-                            >
-                                <i class="fa fa-reply"></i>
-                                View
-                            </a>
-                        </p>
+        <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <h3>
+                            {{review.name}}
+                        </h3>
+                        {{review.review}}
+                        <a
+                            class="float-right btn btn-outline-primary ml-2"
+                            href={{review.viewLink}}
+                            rel="noopener"
+                            target="_blank"
+                        >
+                            <i class="fa fa-reply"></i>
+                            Read Full Review
+                        </a>
                     </div>
                 </div>
             </div>
