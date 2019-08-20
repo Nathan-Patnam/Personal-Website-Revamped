@@ -7,19 +7,34 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <h3>
-                            {{review.name}}
-                        </h3>
-                        {{review.review}}
-                        <a
-                            class="float-right btn btn-outline-primary ml-2"
-                            href={{review.viewLink}}
-                            rel="noopener"
-                            target="_blank"
-                        >
-                            <i class="fa fa-reply"></i>
-                            Read Full Review
-                        </a>
+                        <div class="col-lg-4 col-md-2">
+                            <img
+                                src={{review.avatarLink}}
+                                class="img img-fluid rounded-circle"
+                                alt="animated person"
+                             />
+
+                            <p class="text-secondary text-center">
+                                Tutored for
+                                {{review.numberTutoringSession}}
+                                sesions
+                            </p>
+                        </div>
+                        <div class="col-lg-8 col-md-10">
+                            <h3>
+                                {{review.name}}
+                            </h3>
+                            {{review.review}}
+                            <a
+                                class="float-right btn btn-outline-primary ml-2"
+                                href={{review.viewLink}}
+                                rel="noopener"
+                                target="_blank"
+                            >
+                                <i class="fa fa-reply"></i>
+                                Read Full Review
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
