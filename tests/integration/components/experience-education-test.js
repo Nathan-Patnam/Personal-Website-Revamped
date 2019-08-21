@@ -4,23 +4,17 @@ import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | experience-education', function(hooks) {
-  setupRenderingTest(hooks);
+    setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    hooks.beforeEach(async function() {
+        await render(hbs`<ExperienceEducation />`);
+    });
 
-    await render(hbs`<ExperienceEducation />`);
+    test('experience renders', async function(assert) {
+        assert.dom('[data-test-experience]').exists();
+    });
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <ExperienceEducation>
-        template block text
-      </ExperienceEducation>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
-  });
+    test('proper number of experiences render ', async function(assert) {
+        assert.dom('[data-test-experience] div.item').exists({ count: 6 });
+    });
 });
