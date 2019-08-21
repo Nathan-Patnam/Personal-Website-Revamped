@@ -63,21 +63,21 @@
             </div>
             <div class="card-body no-padding">
                 {{#each educations as |education|}}
-                    <div class="item">
+                    <div class="item my-4">
                         <div class="row">
                             <div class="col-3 text-right pt-4">
                                 {{#if education.isLogoSVG}}
                                     {{svg-jar
                                         education.logoPath
-                                        width='80px'
-                                        height='80px'
+                                        width='100px'
+                                        height='100px'
                                         local-class='svg'
                                     }}
                                 {{else}}
                                     <img
                                         src={{education.logoPath}}
                                         alt={{education.imageAltDescription}}
-                                        style="height: 85px; width: 85px;"
+                                        style="height: 100px; width: 100px;"
                                      />
 
                                 {{/if}}
@@ -86,9 +86,9 @@
                                 <h5>
                                     {{education.institution}}
                                 </h5>
-                                <p>
+                                <div>
                                     {{education.date}}
-                                </p>
+                                </div>
                                 {{#each education.achiviements as |achivement|}}
                                     <p>
                                         {{achivement}}
