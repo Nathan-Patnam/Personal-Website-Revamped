@@ -1,187 +1,43 @@
-.timeline {
-    list-style: none;
-    padding: 20px 0 20px;
-    position: relative;
-}
-.timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: ' ';
-    width: 3px;
-    background-color: #eeeeee;
-    left: 50%;
-    margin-left: -1.5px;
-}
-.timeline > li {
-    margin-bottom: 20px;
-    position: relative;
-}
-.timeline > li:before,
-.timeline > li:after {
-    content: ' ';
-    display: table;
-}
-.timeline > li:after {
-    clear: both;
-}
-.timeline > li:before,
-.timeline > li:after {
-    content: ' ';
-    display: table;
-}
-.timeline > li:after {
-    clear: both;
-}
-.timeline > li > .timeline-panel {
-    width: 50%;
-    float: left;
-    border: 1px solid #d4d4d4;
-    border-radius: 2px;
-    padding: 20px;
-    position: relative;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-.timeline > li.timeline-inverted + li:not(.timeline-inverted),
-.timeline > li:not(.timeline-inverted) + li.timeline-inverted {
-    margin-top: -60px;
+body {
+    margin-top: 20px;
+    background: #eee;
 }
 
-.timeline > li:not(.timeline-inverted) {
-    padding-right: 90px;
+.recent-activities .item {
+    padding: 0 15px;
+    border-bottom: 1px solid #eee;
 }
 
-.timeline > li.timeline-inverted {
-    padding-left: 90px;
+.recent-activities .item div[class*='col-'] {
+    padding: 15px;
 }
-.timeline > li > .timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
-    border-bottom: 15px solid transparent;
-    content: ' ';
+
+.recent-activities h5 {
+    font-weight: 400;
+    color: #333;
 }
-.timeline > li > .timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
-    border-bottom: 14px solid transparent;
-    content: ' ';
+
+.recent-activities p {
+    font-size: 0.75em;
+    color: #999;
 }
-.timeline > li > .timeline-badge {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
+
+.recent-activities .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #f5f5f5;
     text-align: center;
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    margin-left: -25px;
-    background-color: #999999;
-    z-index: 100;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-}
-.timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-}
-.timeline > li.timeline-inverted > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-}
-.timeline > li.timeline-inverted > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-}
-.timeline-badge.primary {
-    background-color: #2e6da4 !important;
-}
-.timeline-badge.success {
-    background-color: #3f903f !important;
-}
-.timeline-badge.warning {
-    background-color: #f0ad4e !important;
-}
-.timeline-badge.danger {
-    background-color: #d9534f !important;
-}
-.timeline-badge.info {
-    background-color: #5bc0de !important;
-}
-.timeline-title {
-    margin-top: 0;
-    color: inherit;
-}
-.timeline-body > p,
-.timeline-body > ul {
-    margin-bottom: 0;
-}
-.timeline-body > p + p {
-    margin-top: 5px;
+    display: inline-block;
 }
 
-// .education-experience {
-//     display: flex;
-//     font-family: 'Nunito Sans', sans-serif;
-// }
+.recent-activities .date {
+    font-size: 0.75em;
+    color: #999;
+    padding: 10px;
+}
 
-// .education-experience .experience-container {
-//     flex: 3;
-// }
-
-// .education-experience .education-container {
-//     flex: 2;
-// }
-// .experience-card {
-//     margin: 15px 0;
-// }
-
-// .date-company-title {
-//     display: flex;
-//     font-weight: 700;
-//     font-size: 20px;
-// }
-// .date-company-title .date {
-//     flex: 2;
-// }
-
-// .date-company-title .company-title {
-//     flex: 8;
-// }
-// .logo-description {
-//     display: flex;
-// }
-
-// .logo {
-//     flex: 2;
-// }
-// .logo-image {
-//     position: relative;
-//     float: left;
-//     background-position: 50% 50%;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
-
-// .description {
-//     flex: 8;
-//     padding: 5px 20px;
-//     font-size: 14px;
-// }
+.recent-activities .date-holder {
+    padding: 0 !important;
+    border-right: 1px solid #eee;
+}
