@@ -59,17 +59,16 @@
                             </div>
                             <div class="col-9 content">
                                 <h5>
-                                    {{education.companyName}}
+                                    {{education.institution}}
                                 </h5>
                                 <p>
-                                    {{education.title}}
-                                    <small>
-                                        {{education.date}}
-                                    </small>
+                                    {{education.date}}
                                 </p>
-                                <p>
-                                    {{education.description}}
-                                </p>
+                                {{#each education.achiviements as |achivement|}}
+                                    <p>
+                                        {{achivement}}
+                                    </p>
+                                {{/each}}
                             </div>
                         </div>
                     </div>
