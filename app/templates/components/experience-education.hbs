@@ -13,8 +13,8 @@
                             <div class="col-3 text-right pt-4">
                                 {{svg-jar
                                     experience.logoPath
-                                    width='80px'
-                                    height='80px'
+                                    width='100px'
+                                    height='100px'
                                     local-class='svg'
                                 }}
                             </div>
@@ -33,6 +33,20 @@
                                 <p>
                                     {{experience.description}}
                                 </p>
+                                {{#if experience.viewAbleContent}}
+                                    <div>
+                                        <a
+                                            class="btn btn-info"
+                                            target="_blank"
+                                            href={{experience.viewAbleContentLink
+                                            }}
+                                            rel="noopener"
+                                            role="button"
+                                        >
+                                            {{experience.viewAbleContent}}
+                                        </a>
+                                    </div>
+                                {{/if}}
                             </div>
                         </div>
                     </div>

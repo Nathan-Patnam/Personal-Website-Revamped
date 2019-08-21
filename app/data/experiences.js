@@ -7,7 +7,9 @@ export default {
             date: 'Summer 2019',
             description:
                 "Worked on Heroku's Dashboard team where I am learning Ember, GraphQL, Purple3(CSS library), Heroku, Mirage, and QUnit to build a web- service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS).",
-            viewWork: 'google.com'
+            viewWork: 'google.com',
+            viewAbleContent: 'View Demo',
+            viewAbleContentLink: 'https://youtu.be/M_qvAdgDZ38'
         },
         {
             companyName: 'Wyzant',
@@ -16,7 +18,9 @@ export default {
             date: 'March 2018 - Ongoing',
             description:
                 'Tutor 23 people online for 85 total hours. Covered topics such as TDD, APIs, OOP, SOLID principles, and unit testing.',
-            viewWork: 'google.com'
+            viewAbleContent: 'View Tutoring Profile',
+            viewAbleContentLink:
+                'https://www.wyzant.com/Tutors/TutoringByNathan8'
         },
         {
             companyName: 'Honda R&D Americas Inc.',
