@@ -15,6 +15,6 @@ module('Integration | Component | experience-education', function(hooks) {
     });
 
     test('proper number of experiences render ', async function(assert) {
-        assert.dom('[data-test-experience] div.item').exists({ count: 6 });
+        assert.dom('[data-test-experience] div.item').exists({ count: 7 });
     });
 });
