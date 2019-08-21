@@ -11,7 +11,7 @@ export default {
         },
         {
             companyName: 'Wyzant',
-            logoPath: 'heroku',
+            logoPath: 'wyzant',
             title: 'Software Engineering Tutor',
             date: 'March 2018 - Ongoing',
             description:
