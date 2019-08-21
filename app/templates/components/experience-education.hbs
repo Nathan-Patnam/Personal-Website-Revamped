@@ -46,87 +46,34 @@
                 </h3>
             </div>
             <div class="card-body no-padding">
-                <div class="item">
-                    <div class="row">
-                        <div class="col-4 date-holder text-right">
-                            <div class="icon">
-                                <i class="fa fa-clock-o"></i>
+                {{#each educations as |education|}}
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-3 date-holder text-right pt-4">
+                                {{svg-jar
+                                    education.logoPath
+                                    width='80px'
+                                    height='80px'
+                                    local-class='svg'
+                                }}
                             </div>
-                            <div class="date">
-                                <span>
-                                    6:00 am
-                                </span>
-                                <br />
-                                <span class="text-info">
-                                    6 hours ago
-                                </span>
+                            <div class="col-9 content">
+                                <h5>
+                                    {{education.companyName}}
+                                </h5>
+                                <p>
+                                    {{education.title}}
+                                    <small>
+                                        {{education.date}}
+                                    </small>
+                                </p>
+                                <p>
+                                    {{education.description}}
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-8 content">
-                            <h5>
-                                Meeting
-                            </h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-4 date-holder text-right">
-                            <div class="icon">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <div class="date">
-                                <span>
-                                    6:00 am
-                                </span>
-                                <br />
-                                <span class="text-info">
-                                    6 hours ago
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-8 content">
-                            <h5>
-                                Meeting
-                            </h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-4 date-holder text-right">
-                            <div class="icon">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <div class="date">
-                                <span>
-                                    6:00 am
-                                </span>
-                                <br />
-                                <span class="text-info">
-                                    6 hours ago
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-8 content">
-                            <h5>
-                                Meeting
-                            </h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {{/each}}
             </div>
         </div>
     </div>
