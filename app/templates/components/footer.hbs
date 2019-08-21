@@ -1,13 +1,10 @@
-<div class="text-center" local-class="footer-container">
-    <div>
+<div local-class="footer-container">
+    <div class="text-center">
         <h1>
-            Follow Me On:
+            Contact Information & Platforms I'm On
         </h1>
-        <p>
-            Icons brought by FavIcon
-        </p>
     </div>
-    <ul data-test-footer local-class="footer-icons">
+    <ul data-test-footer local-class="footer-icons" class="text-center">
         <a
             href="https://github.com/Nathan-Patnam"
             class="mr-3"
@@ -70,4 +67,34 @@
             }}
         </a>
     </ul>
+    <small class="text-left pl-1 mt-n4">
+        Icons & Images brought to you by
+        <a
+            href="https://www.flaticon.com"
+            class="mx-1"
+            rel="noopener"
+            target="_blank"
+        >
+            {{svg-jar
+                'freepik-logo'
+                width='35px'
+                height='35px'
+                local-class='svg'
+            }}
+        </a>
+        +
+        <a
+            href="https://www.flaticon.com"
+            class="ml-1"
+            rel="noopener"
+            target="_blank"
+        >
+            {{svg-jar
+                'flaticon-logo'
+                width='80px'
+                height='80px'
+                local-class='svg'
+            }}
+        </a>
+    </small>
 </div>
