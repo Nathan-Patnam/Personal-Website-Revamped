@@ -4,23 +4,17 @@ import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | footer', function(hooks) {
-  setupRenderingTest(hooks);
+    setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    hooks.beforeEach(async function() {
+        await render(hbs`<Footer />`);
+    });
 
-    await render(hbs`<Footer />`);
+    test('it renders', async function(assert) {
+        assert.dom('[data-test-footer]').exists();
+    });
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <Footer>
-        template block text
-      </Footer>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
-  });
+    test('correct number of icons rendered ', async function(assert) {
+        assert.dom('[data-test-footer] a').exists({ count: 6 });
+    });
 });
