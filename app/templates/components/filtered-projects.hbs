@@ -1,38 +1,38 @@
-<div class="album py-5 bg-light" data-test-filtered-projects>
+<div class="album py-2 bg-light" data-test-filtered-projects>
     <div class="container">
-        <div class="btn-group" role="group" aria-label="Basic example">
+        <div class="col-md-12 text-center">
             <button
                 type="button"
-                class="btn btn-secondary"
-                {{action (mut projectsFilterKey) 'ALL'}}
-            >
-                All
-            </button>
-            <button
-                type="button"
-                class="btn btn-secondary"
+                class="btn btn-outline-secondary btn-lg"
                 {{action (mut projectsFilterKey) 'APP'}}
             >
                 Web Applications
             </button>
             <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-outline-secondary btn-lg"
                 {{action (mut projectsFilterKey) 'VIDEO'}}
             >
                 Videos
             </button>
             <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-outline-secondary btn-lg"
                 {{action (mut projectsFilterKey) 'ARTICLE'}}
             >
                 Articles
             </button>
+            <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg"
+                {{action (mut projectsFilterKey) 'ALL'}}
+            >
+                All
+            </button>
         </div>
-        <div class="row">
+        <div class="row py-5">
             {{#each filteredProjects as |project|}}
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
                     <div class="card mb-4 box-shadow" data-test-project>
                         <img
                             class="card-img-top"
