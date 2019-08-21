@@ -57,6 +57,13 @@ export default {
             description:
                 "Worked on Heroku's Dashboard team where I am learning Ember, GraphQL, Purple3(CSS library), Heroku, Mirage, and QUnit to build a web- service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS).",
             viewWork: 'google.com'
+        },
+        {
+            companyName: 'Upwork',
+            logoPath: 'upwork',
+            title: 'Freelance Developer',
+            date: 'January - October 2017',
+            description: ''
         }
     ]
 };
