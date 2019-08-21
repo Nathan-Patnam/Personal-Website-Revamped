@@ -66,12 +66,21 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-3 text-right pt-4">
-                                {{svg-jar
-                                    education.logoPath
-                                    width='80px'
-                                    height='80px'
-                                    local-class='svg'
-                                }}
+                                {{#if education.isLogoSVG}}
+                                    {{svg-jar
+                                        education.logoPath
+                                        width='80px'
+                                        height='80px'
+                                        local-class='svg'
+                                    }}
+                                {{else}}
+                                    <img
+                                        src={{education.logoPath}}
+                                        alt={{education.imageAltDescription}}
+                                        style="height: 85px; width: 85px;"
+                                     />
+
+                                {{/if}}
                             </div>
                             <div class="col-9 content">
                                 <h5>
