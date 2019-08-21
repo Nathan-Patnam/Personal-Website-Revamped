@@ -1,25 +1,24 @@
 {
-  "addons": [
-
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz"
+        },
+        {
+            "url": "https://github.com/jsteiner/heroku-buildpack-watchman"
+        }
+    ],
+    "description": "Nathan Patnam Personal Website",
+    "env": {},
+    "formation": {
+        "web": {
+            "quantity": 1
+        }
     },
-    {
-      "url": "https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz"
-    }
-  ],
-  "description": "Nathan Patnam Personal Website",
-  "env": {
-  },
-  "formation": {
-    "web": {
-      "quantity": 1
-    }
-  },
-  "name": "Personal-Website-Revamped",
-  "scripts": {
-  },
-  "stack": "heroku-18"
+    "name": "Personal-Website-Revamped",
+    "scripts": {},
+    "stack": "heroku-18"
 }
