@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-body" data-test-experiences>
                     {{#each experiences as |experience|}}
-                        <div class="my-4" local-class="item" d>
+                        <div class="my-4" local-class="item">
                             <div class="row">
                                 <div
                                     class="col-3 text-right pt-4"
@@ -78,7 +78,7 @@
                 </div>
                 <div class="card-body no-padding">
                     {{#each educations as |education|}}
-                        <div class="item my-4">
+                        <div class="my-4" local-class="item">
                             <div class="row">
                                 <div class="col-3 text-right pt-4">
                                     {{#if education.isLogoSVG}}
@@ -98,19 +98,21 @@
 
                                     {{/if}}
                                 </div>
-                                <div class="col-9 content">
-                                    <h5>
+                                <div class="col-9 pt-4">
+                                    <div local-class="company-heading">
                                         {{education.institution}}
-                                    </h5>
+                                    </div>
                                     <div>
-                                        {{education.date}}
+                                        <small>
+                                            {{education.date}}
+                                        </small>
                                     </div>
                                     {{#each
                                         education.achiviements as |achivement|
                                     }}
-                                        <div>
+                                        <p>
                                             {{achivement}}
-                                        </div>
+                                        </p>
                                     {{/each}}
                                 </div>
                             </div>
