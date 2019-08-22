@@ -1,24 +1,24 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/node:lts-browsers
-        environment:
-          JOBS: 1
-    wworking_directory: ~/app
-    steps:
-      - checkout
-      - run:
-          name: Yarn Install
-          command: yarn install --non-interactive
-      - run:
-          name: Run JS Lint
-          command: yarn run lint:js
-      - run:
-          name: Run Tests
-          command: yarn test
-      - deploy:
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              ember deploy production
-            fi
+    build:
+        docker:
+            - image: circleci/node:lts-browsers
+              environment:
+                  JOBS: 1
+        wworking_directory: ~/app
+        steps:
+            - checkout
+            - run:
+                  name: Yarn Install
+                  command: yarn install --non-interactive
+            - run:
+                  name: Run JS Lint
+                  command: yarn run lint:js
+            - run:
+                  name: Run Tests
+                  command: yarn test
+            - deploy:
+                  command: |
+                      if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                        ember deploy production
+                      fi
