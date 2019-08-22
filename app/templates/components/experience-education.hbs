@@ -1,114 +1,122 @@
-<div class="row">
-    <div class="col-lg-6">
-        <div local-class="recent-activities" class="card">
-            <div class="card-header">
-                <h3>
-                    Experience
-                </h3>
-            </div>
-            <div class="card-body" data-test-experience>
-                {{#each experiences as |experience|}}
-                    <div class="item my-4">
-                        <div class="row">
-                            <div class="col-3 text-right pt-4">
-                                {{svg-jar
-                                    experience.logoPath
-                                    width='100px'
-                                    height='100px'
-                                    local-class='svg'
-                                }}
-                            </div>
-                            <div class="col-9 content">
-                                <div local-class="company-heading">
-                                    {{experience.companyName}}
-                                </div>
-                                <div>
-                                    {{experience.title}}
-                                </div>
-                                <div>
-                                    <small>
-                                        {{experience.date}}
-                                    </small>
-                                </div>
-                                <p>
-                                    {{experience.description}}
-                                </p>
-                                {{#if experience.viewAbleContent}}
-                                    <div>
-                                        <a
-                                            class="btn btn-info"
-                                            target="_blank"
-                                            href={{experience.viewAbleContentLink
-                                            }}
-                                            rel="noopener"
-                                            role="button"
-                                        >
-                                            {{experience.viewAbleContent}}
-                                        </a>
-                                    </div>
-                                {{/if}}
-                            </div>
-                        </div>
-                    </div>
-                {{/each}}
-            </div>
-            <div class="text-center my-3">
-                <a
-                    class="btn btn-outline-dark btn-lg"
-                    href="./files/Nathan_Patnam_Resume_SWE_Word.pdf"
-                    role="button"
-                    rel="noopener"
-                    target="_blank"
-                >
-                    View and Download Resume
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div local-class="recent-activities" class="card">
-            <div class="card-header">
-                <h3>
-                    Education
-                </h3>
-            </div>
-            <div class="card-body no-padding">
-                {{#each educations as |education|}}
-                    <div class="item my-4">
-                        <div class="row">
-                            <div class="col-3 text-right pt-4">
-                                {{#if education.isLogoSVG}}
+<div class="container" local-class="large-container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div local-class="recent-activities" class="card">
+                <div class="card-header">
+                    <h3>
+                        Experience
+                    </h3>
+                </div>
+                <div class="card-body" data-test-experiences>
+                    {{#each experiences as |experience|}}
+                        <div class="my-4" local-class="item" d>
+                            <div class="row">
+                                <div
+                                    class="col-3 text-right pt-4"
+                                    data-test-experience
+                                >
                                     {{svg-jar
-                                        education.logoPath
+                                        experience.logoPath
                                         width='100px'
                                         height='100px'
                                         local-class='svg'
                                     }}
-                                {{else}}
-                                    <img
-                                        src={{education.logoPath}}
-                                        alt={{education.imageAltDescription}}
-                                        style="height: 100px; width: 100px;"
-                                     />
-
-                                {{/if}}
-                            </div>
-                            <div class="col-9 content">
-                                <h5>
-                                    {{education.institution}}
-                                </h5>
-                                <div>
-                                    {{education.date}}
                                 </div>
-                                {{#each education.achiviements as |achivement|}}
-                                    <div>
-                                        {{achivement}}
+                                <div class="col-9 content">
+                                    <div local-class="company-heading">
+                                        {{experience.companyName}}
                                     </div>
-                                {{/each}}
+                                    <div>
+                                        {{experience.title}}
+                                    </div>
+                                    <div>
+                                        <small>
+                                            {{experience.date}}
+                                        </small>
+                                    </div>
+                                    <p>
+                                        {{experience.description}}
+                                    </p>
+                                    {{#if experience.viewAbleContent}}
+                                        <div>
+                                            <a
+                                                class="btn btn-info"
+                                                target="_blank"
+                                                href={{experience.viewAbleContentLink
+                                                }}
+                                                rel="noopener"
+                                                role="button"
+                                            >
+                                                {{experience.viewAbleContent}}
+                                            </a>
+                                        </div>
+                                    {{/if}}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {{/each}}
+                    {{/each}}
+                </div>
+                <div class="text-center my-3">
+                    <a
+                        class="btn btn-outline-dark btn-lg"
+                        href="./files/Nathan_Patnam_Resume_SWE_Word.pdf"
+                        role="button"
+                        rel="noopener"
+                        target="_blank"
+                    >
+                        View and Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div local-class="recent-activities" class="card">
+                <div class="card-header">
+                    <h3>
+                        Education
+                    </h3>
+                </div>
+                <div class="card-body no-padding">
+                    {{#each educations as |education|}}
+                        <div class="item my-4">
+                            <div class="row">
+                                <div class="col-3 text-right pt-4">
+                                    {{#if education.isLogoSVG}}
+                                        {{svg-jar
+                                            education.logoPath
+                                            width='100px'
+                                            height='100px'
+                                            local-class='svg'
+                                        }}
+                                    {{else}}
+                                        <img
+                                            src={{education.logoPath}}
+                                            alt={{education.imageAltDescription
+                                            }}
+                                            style="height: 100px; width: 100px;"
+                                         />
+
+                                    {{/if}}
+                                </div>
+                                <div class="col-9 content">
+                                    <h5>
+                                        {{education.institution}}
+                                    </h5>
+                                    <div>
+                                        {{education.date}}
+                                    </div>
+                                    {{#each
+                                        education.achiviements as |achivement|
+                                    }}
+                                        <div>
+                                            {{achivement}}
+                                        </div>
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
             </div>
         </div>
     </div>
