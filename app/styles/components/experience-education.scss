@@ -3,25 +3,29 @@ body {
     background: #eee;
 }
 
-.recent-activities .item {
-    padding: 0 15px;
-    border-bottom: 1px solid #eee;
-}
+.recent-activities {
+    .item {
+        padding: 0 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .item div[class*='col-'] {
+        padding: 15px;
+    }
 
-.recent-activities .item div[class*='col-'] {
-    padding: 15px;
-}
-
-.recent-activities h5 {
-    font-weight: 400;
-    color: #333;
-}
-
-.recent-activities p {
-    font-size: 0.75em;
-    color: #999;
+    p {
+        font-size: 0.75em;
+        color: #999;
+    }
 }
 
 .company-heading {
     margin: 0;
+    font-weight: 400;
+    color: #333;
+}
+
+@media screen and (min-width: 1480px) {
+    .large-container {
+        max-width: 1880px;
+    }
 }

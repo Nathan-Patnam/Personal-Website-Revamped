@@ -50,20 +50,32 @@ export default {
             viewWork: 'google.com'
         },
         {
+            companyName: 'Upwork',
+            logoPath: 'upwork',
+            title: 'Freelance Developer',
+            date: 'January - April 2018',
+            description:
+                'Finished Projects:\n - Cryptocurrency ROI Calculator with Facebook Sharing Results Feature\n- Web form(was a private job for a VR company so their is just a picture of it it below)'
+        },
+
+        {
+            companyName: 'Youtube',
+            logoPath: 'youtube',
+            title: 'Programming Tutor Content Creator',
+            date: 'January - April 2018',
+            description:
+                'Creatd a couple of Youtube videos on data structures & algorithms as well as implementing them in Python',
+            viewAbleContent: 'View Youtube Channel',
+            viewAbleContentLink: 'https://www.youtube.com/user/vert373'
+        },
+        {
             companyName: 'Wofford College',
             logoPath: 'wofford',
             title: '.NET Developer',
             date: 'January - October 2017',
             description:
-                "Worked on Heroku's Dashboard team where I am learning Ember, GraphQL, Purple3(CSS library), Heroku, Mirage, and QUnit to build a web- service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS).",
+                'Developed 5 web forms in .NET using HTML, CSS, JavaScript, jQuery, Git, VB, and MySQL using Microsoft SQL server. Increased branch coverage with better unit tests. Used Ektron, a CMS, to make updates on Wofford’s websites.',
             viewWork: 'google.com'
-        },
-        {
-            companyName: 'Upwork',
-            logoPath: 'upwork',
-            title: 'Freelance Developer',
-            date: 'January - October 2017',
-            description: ''
         }
     ]
 };
