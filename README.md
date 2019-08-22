@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/Nathan-Patnam/Personal-Website-Revamped/tree/master.svg?style=svg)](https://circleci.com/gh/Nathan-Patnam/Personal-Website-Revamped/tree/master)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 # Welcome to my Personal Website's GitHub Repo
 
