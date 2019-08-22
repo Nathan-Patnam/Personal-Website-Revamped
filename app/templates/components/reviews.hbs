@@ -42,7 +42,15 @@
     {{/each}}
 </div>
 <div class="text-center my-4">
-    <button type="button" class="btn btn-dark btn-lg" {{action 'loadNext'}}>
-        View More Reviews
-    </button>
+    {{#if moreResultsToShow}}
+        <button
+            type="button"
+            class="btn btn-dark btn-lg"
+            data-test-view-more-reccomendations
+            {{action 'loadNext'}}
+        >
+            View More Reviews
+            {{showedAllResults}}
+        </button>
+    {{/if}}
 </div>
