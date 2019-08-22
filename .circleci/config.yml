@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: circleci/node:chakracore-10.13
+            - image: circleci/node:lts
               environment:
                   JOBS: 2
         wworking_directory: ~/app
