@@ -4,7 +4,7 @@ jobs:
         docker:
             - image: circleci/node:lts-browsers
               environment:
-                  JOBS: 2
+                  JOBS: 1
         wworking_directory: ~/app
         steps:
             - checkout
