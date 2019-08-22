@@ -2,10 +2,10 @@ version: 2
 jobs:
     build:
         docker:
-            - image: circleci/node:chakracore-10.13
+            - image: circleci/node:lts
               environment:
                   JOBS: 2
-        working_directory: ~/gitzoom-web
+        wworking_directory: ~/app
         steps:
             - checkout
             - run:
