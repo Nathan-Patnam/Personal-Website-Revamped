@@ -37,6 +37,16 @@
                                     <p>
                                         {{experience.description}}
                                     </p>
+                                    <div class="my-4">
+                                        {{#each experience.tech as |skill|}}
+                                            <button
+                                                type="button"
+                                                class="btn btn-light btn-sm"
+                                            >
+                                                {{skill}}
+                                            </button>
+                                        {{/each}}
+                                    </div>
                                     {{#if experience.viewAbleContent}}
                                         <div>
                                             <a
