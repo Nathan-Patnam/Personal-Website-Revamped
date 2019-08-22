@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: circleci/node:6-browsers
+            - image: circleci/node:chakracore-10.13
               environment:
                   JOBS: 2
         working_directory: ~/gitzoom-web
