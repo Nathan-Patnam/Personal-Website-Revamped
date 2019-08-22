@@ -7,7 +7,7 @@ export default {
                 'Before I had my session with Nathan I didn’t even know if I would be able to answer one question on my practice exam. In the span of two hours he made me understand the reasoning behind 6 papers each having 10 questions. Best tutor ever.',
             numberTutoringSession: '4',
             stars: '5/5',
-            avatarLink: 'img/avatars/avatar2.png',
+            avatarLink: 'img/avatars/avatar3.png',
             viewLink: 'https://www.wyzant.com/Tutors/TutoringByNathan8'
         },
         {
@@ -26,7 +26,7 @@ export default {
             review:
                 'I came to Nathan with a python program that I had no idea how to approach. By the end of a short 1hr session he had shown me the most efficient way to write the code while also explaining the methodology. I will definitely be using him again in the future!',
             numberTutoringSession: '1',
-            avatarLink: 'img/avatars/avatar3.png',
+            avatarLink: 'img/avatars/avatar2.png',
             stars: '5/5',
             viewLink: 'https://www.wyzant.com/Tutors/TutoringByNathan8'
         },

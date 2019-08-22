@@ -8,7 +8,7 @@ export default Component.extend({
     reviewList: computed(function() {
         return reviewsAsJSON.data;
     }),
-    pagedContent: pagedArray('reviewList', { infinite: 'unpaged', perPage: 2 }),
+    pagedContent: pagedArray('reviewList', { infinite: 'unpaged', perPage: 3 }),
     actions: {
         loadNext: function() {
             this.get('pagedContent').loadNextPage();
