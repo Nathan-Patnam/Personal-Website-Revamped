@@ -5,7 +5,10 @@ export default {
             isLogoSVG: true,
             logoPath: 'wofford',
             date: 'Sept 2015 - Dec 2019',
-            achiviements: ['GPA : 3.7/4.0 & CS GPA 3.9/4.0']
+            achiviements: [
+                'Graduating in December 2019 with a B.A. in Computer Science',
+                'GPA : 3.7/4.0 & CS GPA 3.9/4.0'
+            ]
         },
         {
             institution: 'DataQuest.io',
@@ -31,7 +34,7 @@ export default {
             institution: 'Udemy',
             isLogoSVG: true,
             logoPath: 'udemy',
-            date: 'Ongoing',
+            date: 'Fall 2017 - Ongoing',
             achiviements: [
                 'The Ultimate MySQL Bootcamp: Go from SQL Beginner To Expert'
             ]
