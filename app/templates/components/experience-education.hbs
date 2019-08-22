@@ -124,6 +124,16 @@
                                             {{achivement}}
                                         </p>
                                     {{/each}}
+                                    <div class="my-4">
+                                        {{#each education.tags as |skill|}}
+                                            <button
+                                                type="button"
+                                                class="btn btn-light btn-sm"
+                                            >
+                                                {{skill}}
+                                            </button>
+                                        {{/each}}
+                                    </div>
                                 </div>
                             </div>
                         </div>

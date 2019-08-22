@@ -8,6 +8,16 @@ export default {
             achiviements: [
                 'Graduating in December 2019 with a B.A. in Computer Science',
                 'GPA : 3.7/4.0 & CS GPA 3.9/4.0'
+            ],
+            tags: [
+                'Python',
+                'Java',
+                'JavaScript',
+                'HTML',
+                'CSS',
+                'C',
+                'C++',
+                'MySQL'
             ]
         },
         {
@@ -20,7 +30,8 @@ export default {
                 'Git And Version Control Course',
                 'Exploratory Data Visualization Course',
                 'APIs And Web Scraping Course'
-            ]
+            ],
+            tags: ['Python', 'Pandas & NumPy', 'Git', 'R']
         },
 
         {
@@ -28,7 +39,8 @@ export default {
             isLogoSVG: true,
             logoPath: 'free-code-camp',
             date: 'Fall 2017 - Spring 2018',
-            achiviements: ['Responsive Web Design Certificate']
+            achiviements: ['Responsive Web Design Certificate'],
+            tags: ['HTML', 'CSS', 'JavaScript']
         },
         {
             institution: 'Udemy',
@@ -37,7 +49,8 @@ export default {
             date: 'Fall 2017 - Ongoing',
             achiviements: [
                 'The Ultimate MySQL Bootcamp: Go from SQL Beginner To Expert'
-            ]
+            ],
+            tags: ['MySQL']
         }
     ]
 };
