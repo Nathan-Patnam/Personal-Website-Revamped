@@ -28,7 +28,7 @@ export default {
             title: 'Full-Stack Mobile Software Engineer Intern',
             date: 'Fall 2018',
             description:
-                "Worked on Heroku's Dashboard team where I am learning Ember, GraphQL, Purple3(CSS library), Heroku, Mirage, and QUnit to build a web- service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS).",
+                'Learned React Native, Redux, AWS Lambda, and Firebase to create Android and iOS apps to prototype new driving experiences to save our customers time and/or money.',
             viewWork: 'google.com'
         },
         {
