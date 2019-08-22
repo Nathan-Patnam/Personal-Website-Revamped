@@ -1,64 +1,64 @@
 {
-  "name": "new-personal-website",
-  "version": "0.0.0",
-  "private": true,
-  "description": "Small description for new-personal-website goes here",
-  "repository": "",
-  "license": "MIT",
-  "author": "",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
-  "scripts": {
-    "build": "ember build",
-    "lint:hbs": "ember-template-lint .",
-    "lint:js": "eslint .",
-    "start": "ember serve",
-    "test": "yarn cross-env COVERAGE=true ember test"
-  },
-  "devDependencies": {
-    "@ember/optional-features": "^0.7.0",
-    "bootstrap": "^4.3.1",
-    "broccoli-asset-rev": "^3.0.0",
-    "clean-css": "4.2.1",
-    "ember-bootstrap": "^3.0.0-rc.2",
-    "ember-cli": "3.11.0",
-    "ember-cli-app-version": "^3.2.0",
-    "ember-cli-babel": "^7.7.3",
-    "ember-cli-code-coverage": "^0.4.2",
-    "ember-cli-dependency-checker": "^3.1.0",
-    "ember-cli-eslint": "^5.1.0",
-    "ember-cli-htmlbars": "^3.0.1",
-    "ember-cli-htmlbars-inline-precompile": "^2.1.0",
-    "ember-cli-inject-live-reload": "2.0.1",
-    "ember-cli-pagination": "^3.1.4",
-    "ember-cli-sass": "^10.0.1",
-    "ember-cli-sri": "^2.1.1",
-    "ember-cli-template-lint": "^1.0.0-beta.1",
-    "ember-cli-uglify": "3.0.0",
-    "ember-css-modules": "^1.2.1",
-    "ember-css-modules-sass": "^1.0.1",
-    "ember-data": "3.12.0",
-    "ember-export-application-global": "^2.0.0",
-    "ember-load-initializers": "^2.0.0",
-    "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-qunit": "^4.4.1",
-    "ember-resolver": "^5.0.1",
-    "ember-source": "3.12.0",
-    "ember-svg-jar": "^2.1.0",
-    "eslint": "6.1.0",
-    "eslint-plugin-ember": "^6.7.1",
-    "eslint-plugin-node": "^9.0.1",
-    "loader.js": "^4.7.0",
-    "qunit-dom": "0.9.0",
-    "sass": "^1.22.9"
-  },
-  "engines": {
-    "node": "10.13"
-  },
-  "dependencies": {
-    "cross-env": "^5.2.0",
-    "ember-test-helpers": "^0.6.3"
-  }
+    "name": "new-personal-website",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Small description for new-personal-website goes here",
+    "repository": "",
+    "license": "MIT",
+    "author": "",
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
+    },
+    "scripts": {
+        "build": "ember build",
+        "lint:hbs": "ember-template-lint .",
+        "lint:js": "eslint .",
+        "start": "ember serve",
+        "test": "yarn cross-env COVERAGE=true ember test"
+    },
+    "devDependencies": {
+        "@ember/optional-features": "^0.7.0",
+        "bootstrap": "^4.3.1",
+        "broccoli-asset-rev": "^3.0.0",
+        "clean-css": "4.2.1",
+        "ember-bootstrap": "^3.0.0-rc.2",
+        "ember-cli": "3.11.0",
+        "ember-cli-app-version": "^3.2.0",
+        "ember-cli-babel": "^7.7.3",
+        "ember-cli-code-coverage": "^0.4.2",
+        "ember-cli-dependency-checker": "^3.1.0",
+        "ember-cli-eslint": "^5.1.0",
+        "ember-cli-htmlbars": "^3.0.1",
+        "ember-cli-htmlbars-inline-precompile": "^2.1.0",
+        "ember-cli-inject-live-reload": "2.0.1",
+        "ember-cli-pagination": "^3.1.4",
+        "ember-cli-sass": "^10.0.1",
+        "ember-cli-sri": "^2.1.1",
+        "ember-cli-template-lint": "^1.0.0-beta.1",
+        "ember-cli-uglify": "3.0.0",
+        "ember-css-modules": "^1.2.1",
+        "ember-css-modules-sass": "^1.0.1",
+        "ember-data": "3.12.0",
+        "ember-export-application-global": "^2.0.0",
+        "ember-load-initializers": "^2.0.0",
+        "ember-maybe-import-regenerator": "^0.1.6",
+        "ember-qunit": "^4.4.1",
+        "ember-resolver": "^5.0.1",
+        "ember-source": "3.12.0",
+        "ember-svg-jar": "^2.1.0",
+        "eslint": "6.1.0",
+        "eslint-plugin-ember": "^6.7.1",
+        "eslint-plugin-node": "^9.0.1",
+        "loader.js": "^4.7.0",
+        "qunit-dom": "0.9.0",
+        "sass": "^1.22.9"
+    },
+    "engines": {
+        "node": "10.16.3"
+    },
+    "dependencies": {
+        "cross-env": "^5.2.0",
+        "ember-test-helpers": "^0.6.3"
+    }
 }
