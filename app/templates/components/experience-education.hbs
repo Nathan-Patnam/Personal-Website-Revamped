@@ -120,9 +120,9 @@
                                     {{#each
                                         education.achiviements as |achivement|
                                     }}
-                                        <p>
-                                            {{achivement}}
-                                        </p>
+                                        {{education-card-description
+                                            achivement=achivement
+                                        }}
                                     {{/each}}
                                     <div class="my-4">
                                         {{#each education.tags as |skill|}}
