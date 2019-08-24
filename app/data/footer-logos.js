@@ -14,15 +14,15 @@ export default {
         },
         {
             logoFilePath: 'resume-logo',
-            linkToResource: 'https://github.com/Nathan-Patnam'
+            linkToResource: './files/Nathan_Patnam_Resume_SWE.pdf'
         },
         {
-            logoFilePath: 'github-logo',
-            linkToResource: 'https://github.com/Nathan-Patnam'
+            logoFilePath: 'mail-logo',
+            linkToResource: 'mailto:nathanpatnam@hotmail.com'
         },
         {
             logoFilePath: 'medium-logo',
-            linkToResource: 'https://github.com/Nathan-Patnam'
+            linkToResource: 'https://medium.com/@nathanpatnam'
         }
     ]
 };
