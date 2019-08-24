@@ -10,30 +10,38 @@
                 <div class="card-body" data-test-experiences>
                     {{#each experiences as |experience|}}
                         <div class="my-4" local-class="item">
-                            <div class="row">
+                            <div class="col">
                                 <div
-                                    class="col-3 text-right pt-4"
+                                    class="col-12 text-left row"
+                                    local-class="card-image-info-container"
                                     data-test-experience
                                 >
-                                    {{svg-jar
-                                        experience.logoPath
-                                        width='100px'
-                                        height='100px'
-                                        local-class='svg'
-                                    }}
+                                    <div class="col-2">
+                                        {{svg-jar
+                                            experience.logoPath
+                                            width='100px'
+                                            height='100px'
+                                            local-class='svg'
+                                        }}
+                                    </div>
+                                    <div>
+                                        <div local-class="company-heading">
+                                            {{experience.companyName}}
+                                        </div>
+                                        <div>
+                                            {{experience.title}}
+                                        </div>
+                                        <div>
+                                            <small>
+                                                {{experience.date}}
+                                            </small>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-9 content">
-                                    <div local-class="company-heading">
-                                        {{experience.companyName}}
-                                    </div>
-                                    <div>
-                                        {{experience.title}}
-                                    </div>
-                                    <div>
-                                        <small>
-                                            {{experience.date}}
-                                        </small>
-                                    </div>
+                                <div
+                                    class="col-12 col-sm-9 content"
+                                    local-class="card-image-info-container"
+                                >
                                     <p>
                                         {{experience.description}}
                                     </p>
