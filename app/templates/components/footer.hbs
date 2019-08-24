@@ -4,69 +4,14 @@
             Contact Information & Platforms I'm On
         </h1>
     </div>
-    <ul data-test-footer local-class="footer-icons" class="text-center">
-        <a
-            href="https://github.com/Nathan-Patnam"
-            class="mr-3"
-            rel="noopener"
-            target="_blank"
-        >
-            {{svg-jar 'github-logo' width='50px' height='50px' local-class='svg'
+    <div data-test-footer local-class="footer-icons" class="text-center">
+        {{#each mediaLinks as |media|}}
+            {{footer-icon
+                resourceLink=media.linkToResource
+                logoPath=media.logoFilePath
             }}
-        </a>
-        <a
-            href="https://www.youtube.com/user/vert373"
-            class="mx-3"
-            rel="noopener"
-            target="_blank"
-        >
-            {{svg-jar
-                'youtube-logo'
-                width='50px'
-                height='50px'
-                local-class='svg'
-            }}
-        </a>
-        <a
-            href="https://www.linkedin.com/in/nathan-patnam/"
-            class="mx-3"
-            rel="noopener"
-            target="_blank"
-        >
-            {{svg-jar
-                'linkedin-logo'
-                width='50px'
-                height='50px'
-                local-class='svg'
-            }}
-        </a>
-        <a
-            href="mailto:nathanpatnam@hotmail.com"
-            class="mx-3"
-            rel="noopener"
-            target="_blank"
-        >
-            {{svg-jar 'mail-logo' width='50px' height='50px' local-class='svg'}}
-        </a>
-        <a
-            href="./files/Nathan_Patnam_Resume_SWE_Word.pdf"
-            class="mx-3"
-            rel="noopener"
-            target="_blank"
-        >
-            {{svg-jar 'resume-logo' width='50px' height='50px' local-class='svg'
-            }}
-        </a>
-        <a
-            href="https://medium.com/@nathanpatnam"
-            class="ml-3"
-            rel="noopener"
-            target="_blank"
-        >
-            {{svg-jar 'medium-logo' width='50px' height='50px' local-class='svg'
-            }}
-        </a>
-    </ul>
+        {{/each}}
+    </div>
     <small class="text-left pl-1 mt-n4">
         Icons & Images brought to you by
         <a
