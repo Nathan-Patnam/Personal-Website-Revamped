@@ -3,24 +3,18 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | footer-icon', function(hooks) {
-  setupRenderingTest(hooks);
+module('Integration | Component | footer-icons', function(hooks) {
+    setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+    hooks.beforeEach(async function() {
+        await render(hbs`<FooterIcons />`);
+    });
 
-    await render(hbs`<FooterIcon />`);
+    test('it renders', async function(assert) {
+        assert.dom('[data-test-footer-icons]').exists();
+    });
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <FooterIcon>
-        template block text
-      </FooterIcon>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
-  });
+    test('correct number of icons rendered ', async function(assert) {
+        assert.dom('[data-test-footer-icons] a').exists({ count: 6 });
+    });
 });

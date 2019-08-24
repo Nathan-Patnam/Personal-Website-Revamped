@@ -1,3 +1,17 @@
-<a href={{resourceLink}} class="mr-3" rel="noopener" target="_blank">
-    {{svg-jar logoPath width='50px' height='50px' local-class='svg'}}
-</a>
+<div data-test-footer-icons local-class="footer-icons" class="text-center">
+    {{#each mediaLinks as |media|}}
+        <a
+            href={{media.linkToResource}}
+            class="mr-3"
+            rel="noopener"
+            target="_blank"
+        >
+            {{svg-jar
+                media.logoFilePath
+                width='50px'
+                height='50px'
+                local-class='svg'
+            }}
+        </a>
+    {{/each}}
+</div>

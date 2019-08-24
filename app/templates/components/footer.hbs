@@ -4,14 +4,7 @@
             Contact Information & Platforms I'm On
         </h1>
     </div>
-    <div data-test-footer local-class="footer-icons" class="text-center">
-        {{#each mediaLinks as |media|}}
-            {{footer-icons
-                resourceLink=media.linkToResource
-                logoPath=media.logoFilePath
-            }}
-        {{/each}}
-    </div>
+    {{footer-icons}}
     <small class="text-left pl-1 mt-n4">
         Icons & Images brought to you by
         <a
