@@ -15,6 +15,6 @@ module('Integration | Component | footer-icons', function(hooks) {
     });
 
     test('correct number of icons rendered ', async function(assert) {
-        assert.dom('[data-test-footer-icons] a').exists({ count: 6 });
+        assert.dom('[data-test-footer-icons] a').exists({ count: 8 });
     });
 });
