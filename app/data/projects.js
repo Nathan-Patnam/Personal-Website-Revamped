@@ -34,7 +34,7 @@ export default {
                 'HTML',
                 'Javascript',
                 'jQuery',
-                'Boostrap'
+                'Bootstrap'
             ],
             viewLink: 'https://hardcore-leavitt-747d51.netlify.com/',
             githubLink: null,
@@ -102,12 +102,19 @@ export default {
         },
         {
             type: ['APP'],
-            imagePath: '',
+            imagePath: './img/projects/needlexchange.jpg',
             imageAltDescription: '',
             title: 'NeedleXchange',
             description:
                 "Web app to help organize and publicize needle exchange programs. Created during Hop Hacks '17 and won Deloitte's prize for having the app with the best UX.",
-            tags: ['Flask', 'Python', 'SQlite', 'HTML', 'CSS'],
+            tags: [
+                'Flask',
+                'Python',
+                'SQlite',
+                'HTML',
+                'CSS',
+                'Google Maps API'
+            ],
             viewLink: 'https://devpost.com/software/needlexchange',
             githubLink: 'https://github.com/zsilver1/NeedleExchange',
             dataCreated: 'Sept 2017'
