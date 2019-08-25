@@ -54,11 +54,12 @@ export default {
         },
         {
             type: ['VIDEO'],
-            imagePath: '',
-            imageAltDescription: '',
+            imagePath: './img/projects/queue.jpg',
+            imageAltDescription:
+                'powerpoint presentation with title about queues',
             title: 'What is a Queue',
             description:
-                'Yputube video I created about the queue data structure and how to implement it in Python',
+                'Youtube video I created about the queue data structure and how to implement it in Python',
             tags: ['Pytest', 'Python'],
             viewLink: 'https://www.youtube.com/watch?v=hV4QoJGw7LU&t=395s',
             githubLink:
