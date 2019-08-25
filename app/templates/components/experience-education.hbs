@@ -11,9 +11,13 @@
                     {{#each experiences as |experience|}}
                         <div class="my-4" local-class="item">
                             <div class="col">
-                                <div class="col-12 row" data-test-experience>
+                                <div
+                                    class="col-12 row"
+                                    local-class="img-and-company-info"
+                                    data-test-experience
+                                >
                                     <div
-                                        class="col-xl-2 col-md-2 col-sm-4 col-12"
+                                        class="col-xl-2 col-lg-3 col-md-2 col-sm-4 col-12"
                                         local-class="card-image-info-container"
                                     >
                                         {{svg-jar
@@ -23,7 +27,7 @@
                                             local-class='svg'
                                         }}
                                     </div>
-                                    <div class="ml-3">
+                                    <div>
                                         <div local-class="company-heading">
                                             {{experience.companyName}}
                                         </div>
