@@ -1,22 +1,29 @@
 <div data-test-footer-icons local-class="footer-icons" class="text-center">
-    {{#each mediaLinks as |media|}}
-        <a
-            href={{media.linkToResource}}
-            class="mr-3"
-            rel="noopener"
-            target="_blank"
+    <div class="row text-center">
         >
-            {{svg-jar
-                media.logoFilePath
-                width='50px'
-                height='50px'
-                local-class='svg'
-            }}
-        </a>
-    {{/each}}
+        <div class="col-xl-4 col-sm-0"></div>
+        <div class="col-xl-4 col-sm-12 tex-center">
+            {{#each mediaLinks as |media|}}
+                <a
+                    href={{media.linkToResource}}
+                    class="mx-2"
+                    rel="noopener"
+                    target="_blank"
+                >
+                    {{svg-jar
+                        media.logoFilePath
+                        width='50px'
+                        height='50px'
+                        local-class='svg'
+                    }}
+                </a>
+            {{/each}}
+        </div>
+        <div class="col-xl-4 col-sm-0"></div>
+    </div>
     <div class="text-center pl-1 mt-n3">
         <small>
-            Icons & Images brought to you by
+            Icons & Images from
             <a
                 href="https://www.flaticon.com"
                 class="mx-1"
