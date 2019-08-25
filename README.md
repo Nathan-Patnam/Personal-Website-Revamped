@@ -1,4 +1,6 @@
 [![CircleCI](https://circleci.com/gh/Nathan-Patnam/Personal-Website-Revamped/tree/master.svg?style=svg)](https://circleci.com/gh/Nathan-Patnam/Personal-Website-Revamped/tree/master)
+[![codecov](https://codecov.io/gh/Nathan-Patnam/Personal-Website-Revamped/branch/master/graph/badge.svg)](https://codecov.io/gh/Nathan-Patnam/Personal-Website-Revamped)
+
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 ## Table of Contents
