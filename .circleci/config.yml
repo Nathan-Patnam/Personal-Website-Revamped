@@ -1,10 +1,13 @@
 version: 2
 jobs:
     build:
+        machine:
+            - COVERALLS_PARALLEL: true
         docker:
             - image: circleci/node:lts-browsers
               environment:
                   JOBS: 1
+
         steps:
             - checkout
             - run:
