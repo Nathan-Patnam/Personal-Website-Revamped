@@ -42,9 +42,14 @@
                                     class="col-12 content"
                                     local-class="card-image-info-container"
                                 >
-                                    <p>
-                                        {{experience.description}}
-                                    </p>
+                                    {{#each
+                                        experience.achievements as |achievment|
+                                    }}
+                                        <p>
+                                            •
+                                            {{achievment}}
+                                        </p>
+                                    {{/each}}
                                     {{#if experience.viewAbleContent}}
                                         <div class="text-center">
                                             <a
