@@ -2,53 +2,59 @@
     <div class="row">
         <div class="col-lg-6">
             <div local-class="recent-activities" class="card">
-                <div class="card-header">
-                    <h3>
+                <div class="card-header text-center">
+                    <h1 class="pt-2">
                         Experience
-                    </h3>
+                    </h1>
                 </div>
                 <div class="card-body" data-test-experiences>
                     {{#each experiences as |experience|}}
                         <div class="my-4" local-class="item">
-                            <div class="row">
+                            <div class="col">
                                 <div
-                                    class="col-3 text-right pt-4"
+                                    class="col-12 text-left row"
+                                    local-class="card-image-info-container"
                                     data-test-experience
                                 >
-                                    {{svg-jar
-                                        experience.logoPath
-                                        width='100px'
-                                        height='100px'
-                                        local-class='svg'
-                                    }}
-                                </div>
-                                <div class="col-9 content">
-                                    <div local-class="company-heading">
-                                        {{experience.companyName}}
+                                    <div class="col-12 col-sm-4 text-center">
+                                        {{svg-jar
+                                            experience.logoPath
+                                            width='100px'
+                                            height='100px'
+                                            local-class='svg'
+                                        }}
                                     </div>
                                     <div>
-                                        {{experience.title}}
-                                    </div>
-                                    <div>
-                                        <small>
-                                            {{experience.date}}
-                                        </small>
-                                    </div>
-                                    <p>
-                                        {{experience.description}}
-                                    </p>
-                                    <div class="my-4">
-                                        {{#each experience.tech as |skill|}}
-                                            <button
-                                                type="button"
-                                                class="btn btn-light btn-sm"
-                                            >
-                                                {{skill}}
-                                            </button>
-                                        {{/each}}
-                                    </div>
-                                    {{#if experience.viewAbleContent}}
+                                        <div local-class="company-heading">
+                                            {{experience.companyName}}
+                                        </div>
                                         <div>
+                                            {{experience.title}}
+                                        </div>
+                                        <div>
+                                            {{experience.date}}
+                                        </div>
+                                        <div>
+                                            <small>
+                                                {{experience.location}}
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-12 content"
+                                    local-class="card-image-info-container"
+                                >
+                                    {{#each
+                                        experience.achievements as |achievment|
+                                    }}
+                                        <p>
+                                            •
+                                            {{achievment}}
+                                        </p>
+                                    {{/each}}
+                                    {{#if experience.viewAbleContent}}
+                                        <div class="text-center">
                                             <a
                                                 class="btn btn-info"
                                                 target="_blank"
@@ -61,6 +67,16 @@
                                             </a>
                                         </div>
                                     {{/if}}
+                                    <div class="my-4">
+                                        {{#each experience.tech as |skill|}}
+                                            <button
+                                                type="button"
+                                                class="btn btn-light btn-sm"
+                                            >
+                                                {{skill}}
+                                            </button>
+                                        {{/each}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -81,10 +97,10 @@
         </div>
         <div class="col-lg-6">
             <div local-class="recent-activities" class="card">
-                <div class="card-header">
-                    <h3>
+                <div class="card-header text-center">
+                    <h1 class="pt-2">
                         Education
-                    </h3>
+                    </h1>
                 </div>
                 <div class="card-body no-padding">
                     {{#each educations as |education|}}
@@ -120,9 +136,9 @@
                                     {{#each
                                         education.achiviements as |achivement|
                                     }}
-                                        <p>
-                                            {{achivement}}
-                                        </p>
+                                        {{education-card-description
+                                            achivement=achivement
+                                        }}
                                     {{/each}}
                                     <div class="my-4">
                                         {{#each education.tags as |skill|}}

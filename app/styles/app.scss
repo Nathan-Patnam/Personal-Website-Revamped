@@ -1,1 +1,17 @@
 @import 'ember-bootstrap/bootstrap';
+@media (min-width: 320px) {
+    p {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 481px) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    p {
+        font-size: 1.1rem;
+    }
+}
