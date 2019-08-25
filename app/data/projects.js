@@ -2,8 +2,8 @@ export default {
     data: [
         {
             type: ['VIDEO', 'APP'],
-            imagePath: '',
-            imageAltDescription: 'Profile page that resembles Facebook UI',
+            imagePath: './img/projects/heroku-demo.jpg',
+            imageAltDescription: 'Purple Power Point cover page',
             title: 'GitHub-Issue Triage Tool',
             description:
                 'Web Service I built during my internship at Heroku what automated the long & tedious process of adding issues created in GitHub to Salesforce"s Grand Unified Ticketing System (GUS).',
@@ -16,7 +16,7 @@ export default {
                 'Mirage',
                 'QUnit'
             ],
-            viewLink: null,
+            viewLink: 'https://youtu.be/M_qvAdgDZ38',
             githubLink: null,
             dataCreated: 'Summer 2019'
         },
