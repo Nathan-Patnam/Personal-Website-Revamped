@@ -21,6 +21,6 @@ jobs:
             - run:
                   name: Run Tests
                   command: yarn test
-        steps:
-        - codecov/upload:
-            file: app/coverage
+            - codecov/upload:
+                  file: coverage/*.json
+                  flags: frontend
