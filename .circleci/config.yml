@@ -3,8 +3,6 @@ orbs:
     codecov: codecov/codecov@1.0.2
 jobs:
     build:
-        machine:
-            - COVERALLS_PARALLEL: true
         docker:
             - image: circleci/node:lts-browsers
               environment:
