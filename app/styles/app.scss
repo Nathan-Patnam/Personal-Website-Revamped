@@ -15,3 +15,11 @@
         font-size: 1.1rem;
     }
 }
+
+:global(.jumbotron) {
+    margin-bottom: 0;
+}
+
+:global(.nav-link.active) {
+    color: #ffd450 !important;
+}

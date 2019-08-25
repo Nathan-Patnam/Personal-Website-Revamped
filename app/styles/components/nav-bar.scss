@@ -12,8 +12,3 @@
         }
     }
 }
-
-//current route heading is highlighted and needs to use boostrap active value
-:global(.nav-link.active) {
-    color: #ffd450 !important;
-}
