@@ -19,6 +19,11 @@ body {
 
         @media (max-width: 2560px) {
             text-align: right;
+            margin-right: 2rem;
+        }
+
+        @media (max-width: 1440px) {
+            margin-right: 1rem;
         }
 
         @media (max-width: 550px) {
