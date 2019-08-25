@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 import projects from '../data/projects';
 export default Component.extend({
-    projectsFilterKey: 'ALL',
+    projectsFilterKey: 'APP',
     filteredProjects: computed('projectsFilterKey', function() {
         const data = projects.data;
         const filterKey = this.projectsFilterKey;

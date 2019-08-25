@@ -23,7 +23,7 @@ export default {
         {
             type: ['APP'],
             imagePath: '.',
-            imageAltDescription: 'Profile page that resembles Facebook UI',
+            imageAltDescription: 'list of housing properties with filters',
             title: 'Real Estate App',
             description:
                 'Progressive Web App that will allow the user to filter and search through all the avaiable listing. Currently using dummy data.',
@@ -65,6 +65,20 @@ export default {
             githubLink:
                 'https://github.com/Nathan-Patnam/Data-Structures-and-Algorithms-in-Python/blob/master/queue_class/queue/Queue.py',
             dataCreated: 'March 2018'
+        },
+        {
+            type: ['VIDEO'],
+            imagePath: './img/projects/stack.jpg',
+            imageAltDescription:
+                'powerpoint presentation with title about stacks',
+            title:
+                'Implementing a Stack in Python with Memory Management and Error Handling',
+            description:
+                'Youtube video I created about the stack data structure and how to implement it in Python',
+            tags: ['Pytest', 'Python'],
+            viewLink: 'https://youtu.be/jF3AK4fQtiM',
+            githubLink: null,
+            dataCreated: 'Feb 2018'
         },
         {
             type: ['ARTICLE'],
