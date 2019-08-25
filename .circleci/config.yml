@@ -1,10 +1,13 @@
-version: 2
+version: 2.1
+orbs:
+    codecov: codecov/codecov@1.0.2
 jobs:
     build:
         docker:
             - image: circleci/node:lts-browsers
               environment:
                   JOBS: 1
+
         steps:
             - checkout
             - run:
@@ -16,3 +19,5 @@ jobs:
             - run:
                   name: Run Tests
                   command: yarn test
+            - codecov/upload:
+                  file: coverage/*.json

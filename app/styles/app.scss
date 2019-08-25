@@ -1,3 +1,24 @@
+/* set the overriding variables */
+$grid-breakpoints: (
+    xxxs: 0,
+    xxs: 320px,
+    xs: 375px,
+    sm: 425px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1440px,
+    xxl: 2560px
+);
+$container-max-widths: (
+    xxs: 320px,
+    xs: 375px,
+    sm: 425px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1440px,
+    xxl: 2560px
+);
+
 @import 'ember-bootstrap/bootstrap';
 @media (min-width: 320px) {
     p {
@@ -14,4 +35,12 @@
     p {
         font-size: 1.1rem;
     }
+}
+
+:global(.jumbotron) {
+    margin-bottom: 0;
+}
+
+:global(.nav-link.active) {
+    color: #ffd450 !important;
 }
