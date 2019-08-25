@@ -21,4 +21,3 @@ jobs:
                   command: yarn test
             - codecov/upload:
                   file: coverage/*.json
-                  flags: frontend
