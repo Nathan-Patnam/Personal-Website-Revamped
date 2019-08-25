@@ -21,5 +21,8 @@ jobs:
             - run:
                   name: Run Tests
                   command: yarn test
-            - codecov/upload:
-                  file: app/coverage
+jobs:
+  build:
+    steps:
+      - codecov/upload:
+          file: app/coverage
