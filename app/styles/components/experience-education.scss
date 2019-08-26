@@ -5,18 +5,36 @@ body {
 
 .recent-activities {
     .item {
-        padding: 0 15px;
         border-bottom: 1px solid #eee;
-    }
-    .item div[class*='col-'] {
-        padding: 15px;
     }
 
     p {
         color: #999;
     }
+    .img-and-company-info {
+        margin: 0;
+    }
     .card-image-info-container {
         padding: 0 !important;
+
+        @media (max-width: 2560px) {
+            text-align: right;
+            margin-right: 2rem;
+        }
+
+        @media (max-width: 1440px) {
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 550px) {
+            text-align: center;
+        }
+    }
+    .achievements {
+        padding: 0;
+        p {
+            margin-bottom: 0;
+        }
     }
 }
 

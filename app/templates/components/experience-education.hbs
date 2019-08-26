@@ -12,11 +12,14 @@
                         <div class="my-4" local-class="item">
                             <div class="col">
                                 <div
-                                    class="col-12 text-left row"
-                                    local-class="card-image-info-container"
+                                    class="col-12 row"
+                                    local-class="img-and-company-info"
                                     data-test-experience
                                 >
-                                    <div class="col-12 col-sm-4 text-center">
+                                    <div
+                                        class="col-xxl-1 col-xl-2 col-lg-3 col-md-2 col-sm-4 col-12"
+                                        local-class="card-image-info-container"
+                                    >
                                         {{svg-jar
                                             experience.logoPath
                                             width='100px'
@@ -42,8 +45,8 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="col-12 content"
-                                    local-class="card-image-info-container"
+                                    class="col-12 mt-2"
+                                    local-class="achievements"
                                 >
                                     {{#each
                                         experience.achievements as |achievment|
@@ -67,7 +70,7 @@
                                             </a>
                                         </div>
                                     {{/if}}
-                                    <div class="my-4">
+                                    <div class="my-2">
                                         {{#each experience.tech as |skill|}}
                                             <button
                                                 type="button"

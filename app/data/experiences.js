@@ -7,7 +7,7 @@ export default {
             date: 'Summer 2019',
             location: 'San Francisco, CA & Remote',
             achievements: [
-                "Worked on Heroku's Dashboard team where I am learning Ember, GraphQL, Purple3(CSS library), Heroku, Mirage, and QUnit to build a web- service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS)."
+                'Built a web-service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS).'
             ],
 
             viewWork: 'google.com',
@@ -32,7 +32,7 @@ export default {
             date: 'March 2018 - Ongoing',
             location: 'Remote',
             achievements: [
-                'Tutor 23 people online for 85 total hours.',
+                'Tutored over 25 people online for 90+ total hours.',
                 'Covered topics such as TDD, APIs, OOP, SOLID principles, and unit testing.'
             ],
 
@@ -82,7 +82,7 @@ export default {
                 'Cryptocurrency ROI Calculator with Facebook Sharing Results Feature',
                 'Web form(was a private job for a VR company so their is just a picture of it it below)'
             ],
-            tech: ['Python', 'JavaScript', 'HTML', 'CSS', 'Boostrap']
+            tech: ['Python', 'JavaScript', 'HTML', 'CSS', 'Bootstrap']
         },
         {
             companyName: 'Youtube',
@@ -91,11 +91,11 @@ export default {
             date: 'January - April 2018',
             location: 'Remote',
             achievements: [
-                'Creatd a couple of Youtube videos on data structures & algorithms as well as implementing them in Python'
+                'Creatd a couple of videos on data structures & algorithms as well as implementing them in Python'
             ],
             viewAbleContent: 'View Youtube Channel',
             viewAbleContentLink: 'https://www.youtube.com/user/vert373',
-            tech: ['Python']
+            tech: ['Python', 'Pytest']
         },
         {
             companyName: 'UnitedHealth Group',
@@ -107,7 +107,15 @@ export default {
                 'Redesigned the intern hiring process for software engineering managers by creating a web service that saves ~350 hours of manager time(est. $13,000 annually) for the Schaumburg, Ill. office.'
             ],
             viewWork: 'google.com',
-            tech: ['CSS', 'HTML', 'jQuery', 'Bootstrap', 'JavaScript']
+            tech: [
+                'CSS',
+                'HTML',
+                'jQuery',
+                'Bootstrap',
+                'JavaScript',
+                'SharePoint',
+                'REST'
+            ]
         },
 
         {
@@ -125,8 +133,10 @@ export default {
             tech: [
                 '.NET',
                 'VB',
+                'MySQL',
                 'Microsoft SQL Server',
                 'JavaScript',
+                'jQuery',
                 'HTML',
                 'CSS'
             ]
