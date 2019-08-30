@@ -36,6 +36,9 @@ $container-max-widths: (
         font-size: 1.1rem;
     }
 }
+:global(body) {
+    overflow-x: hidden;
+}
 
 :global(.jumbotron) {
     margin-bottom: 0;
