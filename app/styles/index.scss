@@ -98,10 +98,6 @@
         z-index: -1;
     }
 }
-@mixin section-padding {
-    padding-top: 130px;
-    padding-bottom: 130px;
-}
 
 @mixin section-title {
     h2 {
@@ -152,9 +148,6 @@
     @include desktops {
         padding-top: 65px;
     }
-    @include large-desktops {
-        padding-top: 90px;
-    }
 }
 
 .hero-content {
@@ -178,7 +171,7 @@
         letter-spacing: -3.11px;
         line-height: 56px;
         margin-bottom: 15px;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         @include tablet {
             font-size: 50px;
             line-height: 55px;
@@ -190,7 +183,7 @@
     }
     p {
         color: #222f3f;
-        font-family: 'Karla', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         letter-spacing: -0.4px;
         line-height: 36px;
         font-size: 17px;
@@ -215,7 +208,7 @@
             border-radius: 3px;
             background-color: #333333;
             color: #ffffff;
-            font-family: 'Karla', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             font-size: 20px;
             font-weight: 400;
             letter-spacing: -0.4px;
@@ -231,16 +224,13 @@
           CLIENT
 //////////////////////////// */
 .client-section {
-    padding-top: 50px;
+    padding-top: 30px;
     background-color: #fff;
-    @include desktops {
-        padding-top: 85px;
-    }
 }
 .client-title {
     h2 {
         color: #333333;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 400;
         margin-bottom: 25px;
         text-align: center;
