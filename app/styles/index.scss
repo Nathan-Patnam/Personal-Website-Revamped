@@ -1,0 +1,286 @@
+/*=== Media Query ===*/
+
+@mixin brk-point($mw) {
+    @media (min-width: $mw) {
+        @content;
+    }
+}
+@mixin mobile-xs {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mobile-lg {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktops {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin large-desktops {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin large-desktops-mid {
+    @media (min-width: 1366px) {
+        @content;
+    }
+}
+
+@mixin extra-large-desktops {
+    @media (min-width: 1600px) {
+        @content;
+    }
+}
+
+%smallCard {
+    display: flex;
+    align-items: center;
+    .image {
+        border-radius: 50%;
+        width: 43px;
+        height: 43px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        padding-left: 20px;
+        padding-top: 5px;
+        h5 {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1;
+        }
+        span {
+            color: #666666;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: -0.6px;
+            line-height: 1;
+        }
+    }
+}
+%bgOverlay {
+    position: relative;
+    z-index: 1;
+    &:before {
+        background: #000000;
+        content: '';
+        opacity: 0.57;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+@mixin section-title {
+    h2 {
+        font-size: 38px;
+        font-weight: 600;
+        letter-spacing: -2px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    p {
+        width: 697px;
+        height: 64px;
+        color: #666666;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+@mixin section-title-2 {
+    h2 {
+        font-size: 52px;
+        font-weight: 600;
+        letter-spacing: -2px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    p {
+        width: 697px;
+        height: 64px;
+        color: #666666;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+.hero-area {
+    padding-bottom: 80px;
+    background-image: url(../image/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    @include tablet {
+        padding-top: 35px;
+    }
+    @include desktops {
+        padding-top: 65px;
+    }
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 25px;
+    @include tablet {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    @include desktops {
+        margin-top: 60px;
+        margin-bottom: 85px;
+    }
+    @include large-desktops {
+        margin-bottom: 115px;
+    }
+    h1 {
+        color: #1f1f1f;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -3.11px;
+        line-height: 56px;
+        margin-bottom: 15px;
+        font-family: 'Nunito Sans', sans-serif;
+        @include tablet {
+            font-size: 50px;
+            line-height: 55px;
+        }
+        @include desktops {
+            font-size: 70px;
+            line-height: 76px;
+        }
+    }
+    p {
+        color: #222f3f;
+        font-family: 'Nunito Sans', sans-serif;
+        letter-spacing: -0.4px;
+        line-height: 36px;
+        font-size: 17px;
+        font-weight: 400;
+        @include tablet {
+            padding-right: 13px;
+        }
+        @include desktops {
+            font-size: 21px;
+            font-weight: 400;
+            padding-right: 17px;
+        }
+    }
+    .hero-btn {
+        margin-top: 20px;
+        @include desktops {
+            margin-top: 36px;
+        }
+        .btn-hero {
+            width: 205px;
+            height: 60px;
+            border-radius: 3px;
+            background-color: #333333;
+            color: #ffffff;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -0.4px;
+        }
+    }
+}
+.shape {
+    width: 100%;
+    height: 100%;
+}
+
+/* /////////////////////////// 
+          CLIENT
+//////////////////////////// */
+.client-section {
+    padding-top: 30px;
+    background-color: #fff;
+}
+.client-title {
+    h2 {
+        color: #333333;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 38px;
+    }
+}
+
+.client-brand-wrapper {
+    padding-bottom: 45px;
+    border-bottom: 1px solid#e5e5e5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    @include desktops {
+        padding-bottom: 80px;
+    }
+    .single-brand {
+        margin: 0 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        transition: 0.4s;
+        @include large-desktops {
+            flex-basis: calc(20% - 40px);
+            max-width: calc(20% - 40px);
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        .honda {
+            width: 200px;
+            height: 55px;
+        }
+        .heroku {
+            width: 180px;
+            height: 80px;
+        }
+        .microsoft {
+            width: 200px;
+            height: 75px;
+        }
+        .unitedhealth-group {
+            width: 250px;
+            height: 75px;
+        }
+    }
+}
