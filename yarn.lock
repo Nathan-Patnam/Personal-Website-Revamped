@@ -2111,7 +2111,7 @@ broccoli-clean-css@^1.1.0:
     inline-source-map-comment "^1.0.5"
     json-stable-stringify "^1.0.0"
 
-broccoli-concat@^3.2.2, broccoli-concat@^3.7.1, broccoli-concat@^3.7.3:
+broccoli-concat@^3.2.2, broccoli-concat@^3.7.1, broccoli-concat@^3.7.3, broccoli-concat@^3.7.4:
   version "3.7.4"
   resolved "https://registry.yarnpkg.com/broccoli-concat/-/broccoli-concat-3.7.4.tgz#7371e846eb7a97cb44ccff10f68582bcadcafacd"
   integrity sha512-9gRv1tyCQuq2+48DT9DQyxRNLOuwDtHybDeYuWA3g26HFqZd0PGAOeXcLXHpKRhxzrEbU6Gm28dZ/KolMr04cQ==
@@ -2340,7 +2340,7 @@ broccoli-node-info@^2.1.0:
   resolved "https://registry.yarnpkg.com/broccoli-node-info/-/broccoli-node-info-2.1.0.tgz#ca84560e8570ff78565bea1699866ddbf58ad644"
   integrity sha512-l6qDuboJThHfRVVWQVaTs++bFdrFTP0gJXgsWenczc1PavRVUmL1Eyb2swTAXXMpDOnr2zhNOBLx4w9AxkqbPQ==
 
-broccoli-persistent-filter@^1.1.5, broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.2.0, broccoli-persistent-filter@^1.4.3:
+broccoli-persistent-filter@^1.1.5, broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.4.3:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/broccoli-persistent-filter/-/broccoli-persistent-filter-1.4.6.tgz#80762d19000880a77da33c34373299c0f6a3e615"
   integrity sha512-0RejLwoC95kv4kta8KAa+FmECJCK78Qgm8SRDEK7YyU0N9Cx6KpY3UCDy9WELl3mCXLN8TokNxc7/hp3lL4lfw==
@@ -2526,17 +2526,6 @@ broccoli-svg-optimizer@2.0.0:
     lodash "^4.17.15"
     rsvp "^4.8.5"
     svgo "1.3.0"
-
-broccoli-symbolizer@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/broccoli-symbolizer/-/broccoli-symbolizer-0.6.0.tgz#1ece00fba329f19ab42d920350a5f2014f8d0b52"
-  integrity sha512-ZwVDX+kkJ7/TXdhl2ChRZARNAeBiru1+53HHafN5UcnpIzJaE+CbyuSQdxEtnIakSKIZtgI/J6uJIffGDgft3g==
-  dependencies:
-    broccoli-concat "^3.2.2"
-    broccoli-persistent-filter "^1.2.0"
-    cheerio "^0.22.0"
-    json-stable-stringify "^1.0.1"
-    lodash "^4.17.10"
 
 broccoli-uglify-sourcemap@^3.1.0:
   version "3.1.1"
@@ -4134,20 +4123,22 @@ ember-source@3.12.0:
     jquery "^3.4.1"
     resolve "^1.11.1"
 
-ember-svg-jar@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-2.1.0.tgz#663d9cf7f63b046cc27862ddd0a946af718637e3"
-  integrity sha512-UGW+wSXqFq6agZR4yD2ukfqiFylFHOwrD+Ku347tHubicvccpSqlhpiZsDHC/zpISIWLCE+Bo/75zPsb7Mh31Q==
+ember-svg-jar@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-2.2.1.tgz#89c672162a7b479e10c08acfd3eabe93d1eb0275"
+  integrity sha512-NHG2go9iX+xggX0J65kKPjDMhJPF2r237CTqFlVM857acWqxS1XkHnpPP6Tesihk/S0y6+fjefuf2GzK/NtchA==
   dependencies:
     broccoli-caching-writer "^3.0.3"
+    broccoli-concat "^3.7.4"
     broccoli-funnel "^2.0.2"
     broccoli-merge-trees "^3.0.2"
+    broccoli-persistent-filter "^2.3.1"
     broccoli-string-replace "^0.1.2"
     broccoli-svg-optimizer "2.0.0"
-    broccoli-symbolizer "^0.6.0"
     cheerio "^0.22.0"
     ember-assign-polyfill "^2.5.0"
     ember-cli-babel "^7.7.3"
+    json-stable-stringify "^1.0.1"
     lodash "^4.17.15"
     mkdirp "^0.5.1"
     path-posix "^1.0.0"
@@ -4325,21 +4316,21 @@ eslint-plugin-ember@^6.10.1:
     ember-rfc176-data "^0.3.11"
     snake-case "^2.1.0"
 
-eslint-plugin-es@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-es/-/eslint-plugin-es-1.4.0.tgz#475f65bb20c993fc10e8c8fe77d1d60068072da6"
-  integrity sha512-XfFmgFdIUDgvaRAlaXUkxrRg5JSADoRC8IkKLc/cISeR3yHVMefFHQZpcyXXEUUPHfy5DwviBcrfqlyqEwlQVw==
+eslint-plugin-es@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-es/-/eslint-plugin-es-1.4.1.tgz#12acae0f4953e76ba444bfd1b2271081ac620998"
+  integrity sha512-5fa/gR2yR3NxQf+UXkeLeP8FBBl6tSgdrAz1+cF84v1FMM4twGwQoqTnn+QxFLcPOrF4pdKEJKDB/q9GoyJrCA==
   dependencies:
-    eslint-utils "^1.3.0"
+    eslint-utils "^1.4.2"
     regexpp "^2.0.1"
 
-eslint-plugin-node@^9.0.1:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-node/-/eslint-plugin-node-9.1.0.tgz#f2fd88509a31ec69db6e9606d76dabc5adc1b91a"
-  integrity sha512-ZwQYGm6EoV2cfLpE1wxJWsfnKUIXfM/KM09/TlorkukgCAwmkgajEJnPCmyzoFPQQkmvo5DrW/nyKutNIw36Mw==
+eslint-plugin-node@^9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-node/-/eslint-plugin-node-9.2.0.tgz#b1911f111002d366c5954a6d96d3cd5bf2a3036a"
+  integrity sha512-2abNmzAH/JpxI4gEOwd6K8wZIodK3BmHbTxz4s79OIYwwIt2gkpEXlAouJXu4H1c9ySTnRso0tsuthSOZbUMlA==
   dependencies:
-    eslint-plugin-es "^1.4.0"
-    eslint-utils "^1.3.1"
+    eslint-plugin-es "^1.4.1"
+    eslint-utils "^1.4.2"
     ignore "^5.1.1"
     minimatch "^3.0.4"
     resolve "^1.10.1"
@@ -4361,7 +4352,7 @@ eslint-scope@^5.0.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-utils@^1.3.0, eslint-utils@^1.3.1:
+eslint-utils@^1.3.1, eslint-utils@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
   integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
@@ -6307,7 +6298,7 @@ lodash.uniqby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.uniqby/-/lodash.uniqby-4.7.0.tgz#d99c07a669e9e6d24e1362dfe266c67616af1302"
   integrity sha1-2ZwHpmnp5tJOE2Lf4mbGdhavEwI=
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.5.1:
+lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.5.1:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
