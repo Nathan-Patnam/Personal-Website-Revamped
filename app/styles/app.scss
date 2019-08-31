@@ -20,6 +20,13 @@ $container-max-widths: (
 );
 
 @import 'ember-bootstrap/bootstrap';
+h1 {
+    font-family: 'Halant', serif;
+    font-size: 50px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
 @media (min-width: 320px) {
     p {
         font-size: 0.8rem;
