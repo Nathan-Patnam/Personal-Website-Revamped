@@ -1,6 +1,8 @@
 [![CircleCI](https://circleci.com/gh/Nathan-Patnam/Personal-Website-Revamped/tree/master.svg?style=svg)](https://circleci.com/gh/Nathan-Patnam/Personal-Website-Revamped/tree/master)
 [![codecov](https://codecov.io/gh/Nathan-Patnam/Personal-Website-Revamped/branch/master/graph/badge.svg)](https://codecov.io/gh/Nathan-Patnam/Personal-Website-Revamped)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![Depfu](https://badges.depfu.com/badges/f563565082376f8e31d7850655307932/status.svg)](https://depfu.com)
+[![Depfu](https://badges.depfu.com/badges/f563565082376f8e31d7850655307932/overview.svg)](https://depfu.com/github/Nathan-Patnam/Personal-Website-Revamped?project_id=8877)
 
 [View Website](https://personal-website-production.herokuapp.com)
 
