@@ -178,36 +178,31 @@
           CLIENT
 //////////////////////////// */
 .client-section {
-    padding-top: 30px;
+    padding-top: 20px;
     background-color: #fff;
 }
 .client-title {
     h2 {
         color: #333333;
-        font-family: 'Nunito Sans', sans-serif;
         font-family: 'Halant', serif;
         font-weight: 400;
-        margin-bottom: 25px;
         text-align: center;
-        font-size: 24px;
         font-size: 40px;
         line-height: 38px;
     }
 }
 
 .client-brand-wrapper {
-    padding-bottom: 45px;
-    border-bottom: 1px solid#e5e5e5;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 -20px;
     @include desktops {
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
     .single-brand {
         margin: 0 20px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         padding-top: 15px;
         filter: grayscale(100%);
         opacity: 0.8;
