@@ -22,7 +22,7 @@ export default {
         },
         {
             type: ['APP'],
-            imagePath: '.',
+            imagePath: './img/projects/real-estate.png',
             imageAltDescription: 'list of housing properties with filters',
             title: 'Real Estate App',
             description:
@@ -36,7 +36,7 @@ export default {
                 'jQuery',
                 'Bootstrap'
             ],
-            viewLink: 'https://hardcore-leavitt-747d51.netlify.com/',
+            viewLink: '',
             githubLink: null,
             dataCreated: 'April 2019'
         },

@@ -83,8 +83,7 @@ export default {
             achiviements: [
                 {
                     isCertficate: false,
-                    name:
-                        'The Ultimate MySQL Bootcamp: Go from SQL Beginner To Expert'
+                    name: 'The Ultimate MySQL Bootcamp'
                 }
             ],
             tags: ['MySQL']
