@@ -24,16 +24,42 @@
                             <h3>
                                 {{review.name}}
                             </h3>
-                            {{review.review}}
-                            <a
-                                class="float-right btn btn-outline-primary ml-2"
-                                href={{review.viewLink}}
-                                rel="noopener"
-                                target="_blank"
-                            >
-                                <i class="fa fa-reply"></i>
-                                Read Full Review
-                            </a>
+                            <div>
+                                <span
+                                    class="fa fa-star"
+                                    local-class="checked"
+                                ></span>
+                                <span
+                                    class="fa fa-star"
+                                    local-class="checked"
+                                ></span>
+                                <span
+                                    class="fa fa-star"
+                                    local-class="checked"
+                                ></span>
+                                <span
+                                    class="fa fa-star"
+                                    local-class="checked"
+                                ></span>
+                                <span
+                                    class="fa fa-star"
+                                    local-class="checked"
+                                ></span>
+                            </div>
+                            <div>
+                                {{review.review}}
+                            </div>
+                            <div class="my-2">
+                                <a
+                                    class="btn btn-outline-primary"
+                                    href={{review.viewLink}}
+                                    rel="noopener"
+                                    target="_blank"
+                                >
+                                    <i class="fa fa-reply"></i>
+                                    Read Full Review
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
