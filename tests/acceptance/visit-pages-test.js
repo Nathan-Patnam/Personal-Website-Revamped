@@ -12,9 +12,6 @@ module('Acceptance | visit pages', function(hooks) {
         await click('[data-test-experience-heading] a');
         assert.equal(currentURL(), '/experience');
 
-        await click('[data-test-about-me-heading] a');
-        assert.equal(currentURL(), '/');
-
         await click('[data-test-services-heading] a');
         assert.equal(currentURL(), '/services');
 

@@ -1,0 +1,14 @@
+.sticky-container {
+    background-color: #a8a3a4;
+
+    font-family: 'Nunito Sans', sans-serif;
+    div {
+        font-size: 11px;
+        text-align: center;
+
+        color: grey;
+        &:hover {
+            color: #22362a !important;
+        }
+    }
+}
