@@ -91,11 +91,6 @@
 }
 .hero-area {
     padding-bottom: 80px;
-    background-image: url(../image/hero-bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
     @include tablet {
         padding-top: 35px;
     }
