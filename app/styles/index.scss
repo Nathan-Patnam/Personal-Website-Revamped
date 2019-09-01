@@ -1,4 +1,7 @@
 /*=== Media Query ===*/
+$primary-color: #0d41e9;
+$inter: 'Inter', sans-serif;
+$border-color: #e5e5e5;
 
 @mixin brk-point($mw) {
     @media (min-width: $mw) {
@@ -230,5 +233,90 @@
             width: 250px;
             height: 75px;
         }
+    }
+}
+
+.about-section-02 {
+    padding-top: 48px;
+    @include desktops {
+        padding-top: 70px;
+    }
+}
+.about-right-content {
+    text-align: center;
+    margin-top: 50px;
+    @include tablet {
+        text-align: left;
+        margin-top: 0;
+    }
+    h2 {
+        color: #000000;
+        font-family: 'Rubik', sans-serif;
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: -3.16px;
+        line-height: 55px;
+        margin-bottom: 32px;
+        @include tablet {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @include desktops {
+            font-size: 60px;
+            line-height: 74px;
+        }
+    }
+    p {
+        color: #222f3f;
+        font-family: 'Karla', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: -0.4px;
+        line-height: 36px;
+        @include desktops {
+            font-size: 21px;
+            padding-right: 35px;
+        }
+    }
+
+    .about-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include tablet {
+            justify-content: flex-start;
+            margin-top: 60px;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 10px;
+            transition: 0.4s;
+            color: $primary-color;
+
+            i {
+                font-size: 11px;
+                font-weight: 700;
+                position: relative;
+                top: 1px;
+                transition: 0.4s;
+                font-weight: 900;
+                margin-left: 17px;
+            }
+            &:hover {
+                color: $primary-color;
+                i {
+                    color: $primary-color;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+.about-image-left {
+    width: 100%;
+    img {
+        width: 100%;
     }
 }
