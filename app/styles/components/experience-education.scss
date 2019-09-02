@@ -13,17 +13,14 @@ body {
     }
     .img-and-company-info {
         margin: 0;
+        padding: 0;
     }
     .card-image-info-container {
         padding: 0 !important;
 
-        @media (max-width: 2560px) {
+        @media (min-width: 2560px) {
             text-align: right;
             margin-right: 2rem;
-        }
-
-        @media (max-width: 1440px) {
-            margin-right: 1rem;
         }
 
         @media (max-width: 550px) {
