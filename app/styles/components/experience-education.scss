@@ -37,8 +37,20 @@ body {
 
 .company-heading {
     margin: 0;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 600;
     color: #333;
+    font-family: 'Halant', serif;
+}
+
+.company-title {
+    color: grey;
+    font-size: 22px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.company-date-location {
+    color: darkblue;
+    font-weight: 17px;
 }
 
 @media screen and (min-width: 1480px) {
