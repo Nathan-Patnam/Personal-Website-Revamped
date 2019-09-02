@@ -237,10 +237,7 @@ $border-color: #e5e5e5;
 }
 
 .about-section-02 {
-    padding-top: 48px;
-    @include desktops {
-        padding-top: 70px;
-    }
+    padding-top: 20px;
 }
 .about-right-content {
     text-align: center;
