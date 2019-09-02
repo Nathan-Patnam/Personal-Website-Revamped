@@ -69,7 +69,7 @@
                                             </a>
                                         </div>
                                     {{/if}}
-                                    <div class="my-3">
+                                    <div class="my-3" local-class="achievement">
                                         {{#each experience.tech as |skill|}}
                                             <button
                                                 type="button"
@@ -114,7 +114,7 @@
                                     data-test-education
                                 >
                                     <div
-                                        class="col-xxl-1 col-xl-2 col-lg-3 col-md-2 col-sm-4 col-12"
+                                        class="col-xxl-1 col-xl-2 col-lg-3 col-md-2 col-sm-12"
                                         local-class="card-image-info-container"
                                     >
                                         {{#if education.isLogoSVG}}
@@ -135,9 +135,11 @@
                                         {{/if}}
                                     </div>
                                     <div>
-                                        <div local-class="company-heading">
-                                            {{education.institution}}
-                                            <div>
+                                        <div>
+                                            <div local-class="company-heading">
+                                                {{education.institution}}
+                                            </div>
+                                            <div local-class="achievement">
                                                 {{#each
                                                     education.achiviements as |achivement|
                                                 }}
