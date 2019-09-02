@@ -13,17 +13,14 @@ body {
     }
     .img-and-company-info {
         margin: 0;
+        padding: 0;
     }
     .card-image-info-container {
         padding: 0 !important;
 
-        @media (max-width: 2560px) {
+        @media (min-width: 2560px) {
             text-align: right;
             margin-right: 2rem;
-        }
-
-        @media (max-width: 1440px) {
-            margin-right: 1rem;
         }
 
         @media (max-width: 550px) {
@@ -40,8 +37,23 @@ body {
 
 .company-heading {
     margin: 0;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 600;
     color: #333;
+    font-family: 'Halant', serif;
+}
+
+.company-title {
+    color: grey;
+    font-size: 22px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.company-date-location {
+    color: darkblue;
+    font-weight: 17px;
+}
+.achievement {
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 @media screen and (min-width: 1480px) {
