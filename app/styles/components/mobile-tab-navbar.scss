@@ -2,9 +2,13 @@
     background-color: #a8a3a4;
 
     font-family: 'Nunito Sans', sans-serif;
+
     div {
-        font-size: 11px;
+        padding: 0;
         text-align: center;
+        .icon-title {
+            font-size: 12px;
+        }
 
         color: grey;
         &:hover {
