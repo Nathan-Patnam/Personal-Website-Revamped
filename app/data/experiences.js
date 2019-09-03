@@ -66,8 +66,8 @@ export default {
         },
         {
             companyName: 'Microsoft',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
+            desktopLogo: 'microsoft-desktop',
+            mobileLogo: 'microsoft-mobile',
             title: 'Data Science Intern',
             date: 'Summer 2018',
             location: 'Redmond, WA',
