@@ -79,8 +79,8 @@ export default {
         },
         {
             companyName: 'Upwork',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
+            desktopLogo: 'upwork-desktop',
+            mobileLogo: 'upwork-mobile',
             title: 'Freelance Developer',
             date: 'January - April 2018',
             location: 'Remote',
