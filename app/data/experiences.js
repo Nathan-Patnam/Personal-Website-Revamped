@@ -28,9 +28,8 @@ export default {
         },
         {
             companyName: 'Wyzant',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
-            logoPath: 'wyzant',
+            desktopLogo: 'wyzant-desktop',
+            mobileLogo: 'wyzant-desktop',
             title: 'Programming Tutor',
             date: 'March 2018 - Ongoing',
             location: 'Remote',
