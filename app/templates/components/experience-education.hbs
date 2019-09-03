@@ -20,14 +20,22 @@
                                         class="col-xxl-1 col-xl-2 col-lg-3 col-md-2 col-sm-12 text-center mb-2"
                                         local-class="card-image-info-container"
                                     >
-                                        {{svg-jar
-                                            experience.logoPath
-                                            width='100px'
-                                            height='100px'
-                                            local-class='svg'
-                                        }}
+                                        {{#if media.isMobile}}
+                                            {{svg-jar
+                                                experience.mobileLogo
+                                                width='200px'
+                                                height='100px'
+                                                local-class='svg'
+                                            }}
+                                        {{else}}
+                                            {{svg-jar
+                                                experience.desktopLogo
+                                                width='100px'
+                                                height='100px'
+                                            }}
+                                        {{/if}}
                                     </div>
-                                    <div>
+                                    <div class="col-md-10 col-lg-9">
                                         <div local-class="company-heading">
                                             {{experience.companyName}}
                                         </div>

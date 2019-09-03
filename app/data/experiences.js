@@ -2,10 +2,11 @@ export default {
     data: [
         {
             companyName: 'Heroku',
-            logoPath: 'heroku',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: 'Full-Stack Web Intern',
             date: 'Summer 2019',
-            location: 'San Francisco, CA & Remote',
+            location: 'San Francisco, CA',
             achievements: [
                 'Built a web-service to triage issues across all of Heroku’s 3400 open source & private GitHub repositories into Salesforce’s Grand Unified System(GUS).'
             ],
@@ -27,6 +28,8 @@ export default {
         },
         {
             companyName: 'Wyzant',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             logoPath: 'wyzant',
             title: 'Programming Tutor',
             date: 'March 2018 - Ongoing',
@@ -43,7 +46,8 @@ export default {
         },
         {
             companyName: 'Honda R&D Americas',
-            logoPath: 'honda',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: 'Full-Stack Mobile Intern',
             date: 'Fall 2018',
             location: 'Raymond, OH',
@@ -62,7 +66,8 @@ export default {
         },
         {
             companyName: 'Microsoft',
-            logoPath: 'microsoft',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: 'Data Science Intern',
             date: 'Summer 2018',
             location: 'Redmond, WA',
@@ -74,7 +79,8 @@ export default {
         },
         {
             companyName: 'Upwork',
-            logoPath: 'upwork',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: 'Freelance Developer',
             date: 'January - April 2018',
             location: 'Remote',
@@ -86,7 +92,8 @@ export default {
         },
         {
             companyName: 'Youtube',
-            logoPath: 'youtube',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: 'CS Content Creator',
             date: 'January - April 2018',
             location: 'Remote',
@@ -99,7 +106,8 @@ export default {
         },
         {
             companyName: 'UnitedHealth Group',
-            logoPath: 'unitedhealth-group',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: 'Web Developer Intern',
             date: 'Summer 2017',
             location: 'Schaumburg, IL',
@@ -120,7 +128,8 @@ export default {
 
         {
             companyName: 'Wofford College',
-            logoPath: 'wofford',
+            desktopLogo: 'heroku-desktop',
+            mobileLogo: 'heroku-mobile',
             title: '.NET Developer',
             date: 'January - October 2017',
             location: 'Spartanbrg, SC',
