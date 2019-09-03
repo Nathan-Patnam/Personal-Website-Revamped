@@ -46,8 +46,8 @@ wanted to expirement with some other technologies such as CircleCI, Codecov and
 
 -   Freepik for the vector character icons
 -   For testing this website across multiple browsers and devices, I decided to
-    use
-    ![BrowserStack](https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/themes/browserstack/img/browserstack-logo.svg)
+    use BrowserStack
+    ![](https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/themes/browserstack/img/browserstack-logo.svg)
     to do that. BrowserStack is a interactive web-based tool that can test your
     website on over 2000 browsers and real devices instantly. You can learn more
     about it [here](https://www.browserstack.com/)
