@@ -92,8 +92,8 @@ export default {
         },
         {
             companyName: 'Youtube',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
+            desktopLogo: 'youtube-desktop',
+            mobileLogo: 'youtube-mobile',
             title: 'CS Content Creator',
             date: 'January - April 2018',
             location: 'Remote',
@@ -128,8 +128,8 @@ export default {
 
         {
             companyName: 'Wofford College',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
+            desktopLogo: 'wofford',
+            mobileLogo: 'wofford',
             title: '.NET Developer',
             date: 'January - October 2017',
             location: 'Spartanbrg, SC',
