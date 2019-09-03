@@ -36,9 +36,13 @@
                                         {{/if}}
                                     </div>
                                     <div class="col-md-10 col-lg-9">
-                                        <div local-class="company-heading">
-                                            {{experience.companyName}}
-                                        </div>
+                                        {{#if media.isMobile}}
+
+                                        {{else}}
+                                            <div local-class="company-heading">
+                                                {{experience.companyName}}
+                                            </div>
+                                        {{/if}}
                                         <div local-class="company-title">
                                             {{experience.title}}
                                         </div>
