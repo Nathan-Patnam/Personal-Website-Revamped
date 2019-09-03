@@ -45,8 +45,8 @@ export default {
         },
         {
             companyName: 'Honda R&D Americas',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
+            desktopLogo: 'honda-desktop',
+            mobileLogo: 'honda-mobile',
             title: 'Full-Stack Mobile Intern',
             date: 'Fall 2018',
             location: 'Raymond, OH',
