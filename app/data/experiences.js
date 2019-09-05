@@ -105,8 +105,8 @@ export default {
         },
         {
             companyName: 'UnitedHealth Group',
-            desktopLogo: 'heroku-desktop',
-            mobileLogo: 'heroku-mobile',
+            desktopLogo: 'uhg-mobile',
+            mobileLogo: 'uhg-mobile',
             title: 'Web Developer Intern',
             date: 'Summer 2017',
             location: 'Schaumburg, IL',
