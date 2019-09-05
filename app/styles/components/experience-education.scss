@@ -1,32 +1,12 @@
 body {
-    margin-top: 20px;
     background: #eee;
 }
 
 .recent-activities {
-    .item {
-        border-bottom: 1px solid #eee;
-    }
-
     p {
         color: #999;
     }
-    .img-and-company-info {
-        margin: 0;
-        padding: 0;
-    }
-    .card-image-info-container {
-        padding: 0 !important;
 
-        @media (min-width: 2560px) {
-            text-align: right;
-            margin-right: 2rem;
-        }
-
-        @media (max-width: 550px) {
-            text-align: center;
-        }
-    }
     .achievements {
         padding: 0;
         p {
@@ -41,19 +21,6 @@ body {
     font-weight: 600;
     color: #333;
     font-family: 'Halant', serif;
-}
-
-.company-title {
-    color: grey;
-    font-size: 22px;
-    font-family: 'Nunito Sans', sans-serif;
-}
-.company-date-location {
-    color: darkblue;
-    font-weight: 17px;
-}
-.achievement {
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 @media screen and (min-width: 1480px) {

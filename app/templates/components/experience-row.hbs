@@ -1,0 +1,63 @@
+<div class="my-4" local-class="item">
+    <div
+        class="col-12 row"
+        local-class="img-and-company-info"
+        data-test-experience
+    >
+        <div
+            class="col-xxl-1 col-xl-2 col-lg-3 col-md-2 col-sm-12 text-center mb-2"
+            local-class="card-image-info-container"
+        >
+            {{#if media.isMobile}}
+                {{svg-jar experience.mobileLogo width='200px' height='100px'}}
+            {{else}}
+                {{svg-jar experience.desktopLogo width='100px' height='100px'}}
+            {{/if}}
+        </div>
+        <div class="col-md-10 col-lg-9">
+            {{#if media.isMobile}}
+
+            {{else}}
+                <div local-class="company-heading">
+                    {{experience.companyName}}
+                </div>
+            {{/if}}
+            <div local-class="company-title">
+                {{experience.title}}
+            </div>
+            <div local-class="company-date-location">
+                {{experience.date}}
+                ,
+                {{experience.location}}
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-2" local-class="achievements">
+        {{#each experience.achievements as |achievment|}}
+            <p>
+                •
+                {{achievment}}
+            </p>
+        {{/each}}
+        {{#if experience.viewAbleContent}}
+            <div class="text-center my-3">
+                <a
+                    class="btn btn-info"
+                    target="_blank"
+                    href={{experience.viewAbleContentLink}}
+                    rel="noopener"
+                    role="button"
+                >
+                    {{experience.viewAbleContent}}
+                </a>
+            </div>
+        {{/if}}
+        <div class="my-3" local-class="achievement">
+            {{#each experience.tech as |skill|}}
+                <button type="button" class="btn btn-light btn-sm">
+                    {{skill}}
+                </button>
+            {{/each}}
+        </div>
+    </div>
+</div>
