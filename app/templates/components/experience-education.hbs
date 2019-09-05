@@ -34,65 +34,7 @@
                 </div>
                 <div class="card-body no-padding">
                     {{#each educations as |education|}}
-                        <div class="my-4" local-class="item">
-                            <div class="col">
-                                <div
-                                    class="col-12 row"
-                                    local-class="img-and-company-info"
-                                    data-test-education
-                                >
-                                    <div
-                                        class="col-xxl-1 col-xl-2 col-lg-3 col-md-2 col-sm-12"
-                                        local-class="card-image-info-container"
-                                    >
-                                        {{#if education.isLogoSVG}}
-                                            {{svg-jar
-                                                education.logoPath
-                                                width='100px'
-                                                height='100px'
-                                                local-class='svg'
-                                            }}
-                                        {{else}}
-                                            <img
-                                                src={{education.logoPath}}
-                                                alt={{education.imageAltDescription
-                                                }}
-                                                style="height: 100px; width: 100px;"
-                                             />
-
-                                        {{/if}}
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <div local-class="company-heading">
-                                                {{education.institution}}
-                                            </div>
-                                            <div local-class="achievement">
-                                                {{#each
-                                                    education.achiviements as |achivement|
-                                                }}
-                                                    {{education-card-description
-                                                        achivement=achivement
-                                                    }}
-                                                {{/each}}
-                                                <div class="my-4">
-                                                    {{#each
-                                                        education.tags as |skill|
-                                                    }}
-                                                        <button
-                                                            type="button"
-                                                            class="btn btn-light btn-sm"
-                                                        >
-                                                            {{skill}}
-                                                        </button>
-                                                    {{/each}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {{experience-row experience=education}}
                     {{/each}}
                 </div>
             </div>
