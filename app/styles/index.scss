@@ -204,24 +204,15 @@ $border-color: #e5e5e5;
         -o-animation: fadeIn ease 4s;
         -ms-animation: fadeIn ease 4s;
         margin: 0 20px;
-        padding-bottom: 10px;
-        padding-top: 15px;
+
+        height: 85px;
+        width: 250px;
         img {
             object-fit: unset;
+            display: block;
+            margin: auto;
         }
 
-        opacity: 0.8;
-        transition: 0.4s;
-        @include large-desktops {
-            flex-basis: calc(20% - 40px);
-            max-width: calc(20% - 40px);
-        }
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
         .honda {
             width: 200px;
             height: 55px;
