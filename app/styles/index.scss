@@ -198,13 +198,18 @@ $border-color: #e5e5e5;
         padding-bottom: 20px;
     }
     .single-brand {
+        animation: fadeIn ease 4s;
+        -webkit-animation: fadeIn ease 4s;
+        -moz-animation: fadeIn ease 4s;
+        -o-animation: fadeIn ease 4s;
+        -ms-animation: fadeIn ease 4s;
         margin: 0 20px;
         padding-bottom: 10px;
         padding-top: 15px;
         img {
             object-fit: unset;
         }
-        filter: grayscale(100%);
+
         opacity: 0.8;
         transition: 0.4s;
         @include large-desktops {
@@ -315,5 +320,51 @@ $border-color: #e5e5e5;
     width: 100%;
     img {
         width: 100%;
+    }
+}
+
+//keyframes
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
