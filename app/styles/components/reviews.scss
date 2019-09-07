@@ -6,4 +6,13 @@
         color: orange;
         font-size: 20px;
     }
+
+    img {
+        @media (max-width: 767px) {
+            display: block;
+            margin: auto;
+            width: 150px;
+            height: 150px;
+        }
+    }
 }

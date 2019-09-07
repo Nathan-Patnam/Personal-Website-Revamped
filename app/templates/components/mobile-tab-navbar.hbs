@@ -1,42 +1,5 @@
-<div class="navbar fixed-bottom row" local-class="sticky-container">
-    <div class="col-2" local-class="icon-description">
-        <a href="/">
-            <div>
-                {{svg-jar 'mobile-about-me' width='30px' height='30px'}}
-            </div>
-            <div local-class="icon-title">
-                About
-            </div>
-        </a>
-    </div>
-    <div class="col-2">
-        <a href="experience">
-            <div>
-                {{svg-jar 'mobile-work' width='30px' height='30px'}}
-            </div>
-            <div local-class="icon-title">
-                Experience
-            </div>
-        </a>
-    </div>
-    <div class="col-2">
-        <a href="services">
-            <div>
-                {{svg-jar 'mobile-services' width='30px' height='30px'}}
-            </div>
-            <div local-class="icon-title">
-                Services
-            </div>
-        </a>
-    </div>
-    <div class="col-2">
-        <a href="projects">
-            <div>
-                {{svg-jar 'mobile-projects' width='30px' height='30px'}}
-            </div>
-            <div local-class="icon-title">
-                Projects
-            </div>
-        </a>
-    </div>
+<div class="navbar fixed-bottom row text-center" local-class="sticky-container">
+    {{#each navIcons as |navIcon|}}
+        {{mobile-nav-icon icon=navIcon}}
+    {{/each}}
 </div>
