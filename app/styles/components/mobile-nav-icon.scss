@@ -1,3 +1,18 @@
-.icon-title {
-    color: grey;
+.icon-description {
+    a {
+        color: grey;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
+
+:global(a.active) {
+    color: blue;
+    fill: blue;
+    font-size: 14px;
+
+    svg {
+        height: 35px;
+        width: 35px;
+    }
 }

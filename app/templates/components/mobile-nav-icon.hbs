@@ -1,10 +1,10 @@
 <div class="col-2" local-class="icon-description">
-    <a href={{icon.route}}>
+    {{#link-to icon.route}}
         <div>
             {{svg-jar icon.iconFilePath width='30px' height='30px'}}
         </div>
-        <div local-class="icon-title">
+        <div>
             {{icon.iconName}}
         </div>
-    </a>
+    {{/link-to}}
 </div>
