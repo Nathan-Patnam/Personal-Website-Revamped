@@ -1,5 +1,8 @@
-<div class="navbar fixed-bottom row" local-class="sticky-container">
-    <div class="col-2 ml-2" local-class="icon-description">
+<div class="navbar fixed-bottom row text-center" local-class="sticky-container">
+    {{#each navIcons as |navIcon|}}
+        {{mobile-nav-icon icon=navIcon}}
+    {{/each}}
+    {{!-- <div class="col-2 ml-2" local-class="icon-description">
         <a href="/">
             <div>
                 {{svg-jar 'mobile-about-me' width='30px' height='30px'}}
@@ -38,5 +41,5 @@
                 Projects
             </div>
         </a>
-    </div>
+    </div> --}}
 </div>

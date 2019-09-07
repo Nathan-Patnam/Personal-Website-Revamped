@@ -1,1 +1,10 @@
-{{yield}}
+<div class="col-2" local-class="icon-description">
+    <a href={{icon.route}}>
+        <div>
+            {{svg-jar icon.iconFilePath width='30px' height='30px'}}
+        </div>
+        <div local-class="icon-title">
+            {{icon.iconName}}
+        </div>
+    </a>
+</div>

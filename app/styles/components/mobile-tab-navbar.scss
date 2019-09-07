@@ -4,21 +4,4 @@
     font-family: 'Nunito Sans', sans-serif;
     height: 90px;
     padding: 0.5rem 2rem 1.5rem 2rem;
-
-    div {
-        padding: 0;
-        text-align: center;
-        .icon-title {
-            font-size: 12px;
-        }
-
-        color: grey;
-        &:hover {
-            color: #22362a !important;
-        }
-
-        a:link {
-            text-decoration: none;
-        }
-    }
 }
