@@ -3,11 +3,11 @@ export default {
         {
             iconFilePath: 'mobile-about-me',
             iconName: 'About',
-            route: '/'
+            route: 'index'
         },
         {
             iconFilePath: 'mobile-work',
-            iconName: 'Experience',
+            iconName: 'Work',
             route: 'experience'
         },
         {
