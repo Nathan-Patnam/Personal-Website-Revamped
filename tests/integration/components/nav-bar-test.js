@@ -15,8 +15,8 @@ module('Integration | Component | nav-bar', function(hooks) {
     });
 
     test('proper text rendered ', async function(assert) {
-        const navbarHeadings = 'EXPERIENCE SERVICES PROJECTS';
-        assert.dom('[data-test-headings] ul li').exists({ count: 3 });
+        const navbarHeadings = 'ABOUT EXPERIENCE SERVICES PROJECTS';
+        assert.dom('[data-test-headings] ul li').exists({ count: 4 });
         assert.dom('[data-test-nav-bar]').includesText(navbarHeadings);
     });
 });

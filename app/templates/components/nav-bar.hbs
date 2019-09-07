@@ -3,9 +3,6 @@
     local-class="navigation"
     data-test-nav-bar
 >
-    {{#link-to 'index' class='navbar-brand'}}
-        N.P.
-    {{/link-to}}
     <button
         class="navbar-toggler"
         type="button"
@@ -24,6 +21,11 @@
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
         >
+            <li class="nav-item" data-test-about-heading>
+                {{#link-to 'index' class='nav-link'}}
+                    ABOUT
+                {{/link-to}}
+            </li>
             <li class="nav-item" data-test-experience-heading>
                 {{#link-to 'experience' class='nav-link'}}
                     EXPERIENCE
