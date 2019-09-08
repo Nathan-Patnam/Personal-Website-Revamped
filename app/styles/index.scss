@@ -195,19 +195,21 @@
         }
     }
 
-    .about-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @include tablet {
-            justify-content: flex-start;
-            margin-top: 60px;
-        }
-        a {
-            font-size: 16px;
-            font-weight: 600;
-            margin-right: 10px;
-            transition: 0.4s;
+    .hero-btn {
+        margin-top: 20px;
+        text-align: center;
+
+        .btn-hero {
+            text-decoration: none;
+            width: 205px;
+            border-radius: 3px;
+            padding: 10px;
+            background-color: #333333;
+            color: #ffffff;
+            font-family: 'Halant', serif;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: -0.4px;
         }
     }
 }
