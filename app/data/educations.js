@@ -27,7 +27,7 @@ export default {
             companyName: 'DataQuest.io',
             desktopLogo: 'dataquest',
             mobileLogo: 'dataquest',
-            title: 'Online course',
+            title: 'Online Course',
             date: 'Fall 2018 - Ongoing',
             location: 'Online',
             achievements: [
@@ -43,7 +43,7 @@ export default {
             companyName: 'Free Code Camp',
             desktopLogo: 'free-code-camp-desktop',
             mobileLogo: 'free-code-camp-mobile',
-            title: 'Online course',
+            title: 'Online Course',
             date: 'Fall 2017 - Spring 2018',
             location: 'Online',
             achievements: ['Responsive Web Design Certificate'],
@@ -53,11 +53,11 @@ export default {
             companyName: 'Udemy',
             desktopLogo: 'udemy-desktop',
             mobileLogo: 'udemy-mobile',
-            title: 'Online course',
-            date: 'Fall 2017 - Ongoing',
+            title: 'Online Course',
+            date: 'Fall 2017',
             location: 'Online',
             achievements: ['The Ultimate MySQL Bootcamp'],
-            tech: ['MySQL']
+            tech: ['MySQL', 'Python']
         }
     ]
 };
