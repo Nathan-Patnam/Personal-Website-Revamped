@@ -25,8 +25,8 @@ export default {
         },
         {
             companyName: 'DataQuest.io',
-            desktopLogo: 'dataquest',
-            mobileLogo: 'dataquest',
+            desktopLogo: 'dataquest-desktop',
+            mobileLogo: 'dataquest-mobile',
             title: 'Online Course',
             date: 'Fall 2018 - Ongoing',
             location: 'Online',
