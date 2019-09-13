@@ -43,6 +43,12 @@ p {
         font-size: 1.1rem;
     }
 }
+
+:global(p) {
+    color: #555;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 :global(.ember-view) {
     overflow-x: hidden;
 }
