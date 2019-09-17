@@ -4,7 +4,7 @@ export default {
             companyName: 'Heroku',
             desktopLogo: 'heroku-desktop',
             mobileLogo: 'heroku-mobile',
-            title: 'Full-Stack Web Intern',
+            title: 'Full-Stack Engineering Intern',
             date: 'Summer 2019',
             location: 'San Francisco, CA',
             achievements: [
@@ -34,8 +34,7 @@ export default {
             date: 'March 2018 - Ongoing',
             location: 'Remote',
             achievements: [
-                'Tutored over 25 people online for 90+ total hours.',
-                'Covered topics such as TDD, APIs, OOP, SOLID principles, and unit testing.'
+                'Tutor 50+ people online for over 200 total hours on and off the Wyzant platform. Covered topics such as visualizing data using Numpy/Pandas, data structures/algorithms for technical interviews and software engineering principles.'
             ],
 
             viewAbleContent: 'View Tutoring Profile',
@@ -47,7 +46,7 @@ export default {
             companyName: 'Honda R&D Americas',
             desktopLogo: 'honda-desktop',
             mobileLogo: 'honda-mobile',
-            title: 'Full-Stack Mobile Intern',
+            title: 'Full-Stack Mobile Engineering Intern',
             date: 'Fall 2018',
             location: 'Raymond, OH',
             achievements: [
@@ -84,8 +83,7 @@ export default {
             date: 'January - April 2018',
             location: 'Remote',
             achievements: [
-                'Cryptocurrency ROI Calculator with Facebook Sharing Results Feature',
-                'Web form(was a private job for a VR company so their is just a picture of it it below)'
+                'Cryptocurrency ROI Calculator with Facebook Sharing Results Feature'
             ],
             tech: ['Python', 'JavaScript', 'HTML', 'CSS', 'Bootstrap']
         },
@@ -107,7 +105,7 @@ export default {
             companyName: 'UnitedHealth Group',
             desktopLogo: 'uhg-mobile',
             mobileLogo: 'uhg-mobile',
-            title: 'Web Developer Intern',
+            title: 'Front End Engineering Intern',
             date: 'Summer 2017',
             location: 'Schaumburg, IL',
             achievements: [
