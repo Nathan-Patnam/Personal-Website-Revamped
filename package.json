@@ -59,7 +59,7 @@
     },
     "dependencies": {
         "cross-env": "^5.2.1",
-        "ember-responsive": "^3.0.5",
+        "ember-responsive": "^3.0.6",
         "ember-test-helpers": "^0.6.3",
         "ember-truth-helpers": "^2.1.0"
     }
